@@ -194,7 +194,7 @@ KeepDimOpTest_BINARY_DIR:STATIC=/mnt/h/elastic/example
 KeepDimOpTest_SOURCE_DIR:STATIC=/mnt/h/elastic/example
 
 //switch to debug mode
-PROJECT_DEBUG:BOOL=ON
+PROJECT_DEBUG:BOOL=OFF
 
 //No help, variable specified on the command line.
 TEST_PROJECT:UNINITIALIZED=KeepDimOpTest

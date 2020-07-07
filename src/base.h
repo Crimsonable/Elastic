@@ -19,7 +19,7 @@ const int keepDim = 1;
 const int complex = 3;
 }  // namespace type
 
-#define VECTORIZATION_ALIGN_BYTES 16
+#define VECTORIZATION_ALIGN_BYTES 32
 #define VEC_CALL  
 #define FORCE_INLINE inline
 using index = std::size_t;

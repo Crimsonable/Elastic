@@ -29,6 +29,17 @@ class Tensor : public ContainerWarpper<Tensor<T, Dim, Device>, T> {
     if (hasAlloc) aligned_free(m_storage);
   }
 
+  inline void set_ptr(T* ptr, Shape<Dim> _shape) {
+    if (hasAlloc) {
+      hasAlloc = false;
+      aligned_free(m_storage);
+    }
+    m_storage = ptr;
+    shape = _shape;
+    _size = shape.size();
+    ld = _size / shape.last();
+  }
+
   inline Tensor<T, 2, Device> flat2D() {
     Shape<2> _temp;
     _temp[0] = ld;
@@ -37,6 +48,10 @@ class Tensor : public ContainerWarpper<Tensor<T, Dim, Device>, T> {
   }
 
   inline Shape<Dim> getShape() { return this->shape; }
+
+  inline Tensor<T, Dim, Device>& operator=(const Tensor<T, Dim, Device>& exp) {
+    return this->assign(exp);
+  }
 
   template <typename Exp, int exp_type>
   inline Tensor<T, Dim, Device>& operator=(
@@ -58,7 +73,7 @@ class Tensor : public ContainerWarpper<Tensor<T, Dim, Device>, T> {
   Tensor<T, 2, Device> Flat2D(Shape<2> shape) { return resize(shape); }
 
   inline void alloc() {
-    m_storage = mynew_fill0<T>(_size, VECTORIZATION_ALIGN_BYTES);
+    m_storage = mynew_fill0<T>(_size + 16, VECTORIZATION_ALIGN_BYTES);
     hasAlloc = true;
   }
 

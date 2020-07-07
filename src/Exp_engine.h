@@ -219,8 +219,8 @@ class ExpEngine {
   template <typename ExpType>
   FORCE_INLINE static void Eval(
       Container* dst, const ExpBase<ExpType, Dtype, type::container>& exp) {
-    ImpExp<ExpType> _exp = ImpExp<ExpType>(exp);
-    ExpEngineExcutor<Op>(dst, _exp);
+    dst->set_ptr(const_cast<ExpType*>(&exp.derived_to())->m_storage,
+                 const_cast<ExpType*>(&exp.derived_to())->shape);
   }
 
   template <typename ExpType>
