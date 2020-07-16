@@ -9,6 +9,16 @@ struct Shape {
   inline index operator[](size_t i) const { return shape[i]; }
   inline index last() const { return shape[Dim - 1]; }
   inline index first() const { return shape[0]; }
+  inline index dimx() const { return shape[Dim - 2]; }
+  inline index inner_size() const { return shape[Dim - 1] * shape[Dim - 2]; }
+
+  FORCE_INLINE Shape<2> Flat2d() {
+    Shape<2> temp;
+    temp[0] = this->dimx();
+    temp[1] = this->size() / temp[0];
+    return temp;
+  }
+
   inline index size() const {
     index size = 1;
     for (int i = 0; i < Dim; ++i) size *= shape[i];

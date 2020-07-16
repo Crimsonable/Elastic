@@ -130,7 +130,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=KeepDimOpTest
+CMAKE_PROJECT_NAME:STATIC=InitTest
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -197,7 +197,7 @@ KeepDimOpTest_SOURCE_DIR:STATIC=/mnt/h/elastic/example
 PROJECT_DEBUG:BOOL=OFF
 
 //No help, variable specified on the command line.
-TEST_PROJECT:UNINITIALIZED=KeepDimOpTest
+TEST_PROJECT:UNINITIALIZED=InitTest
 
 
 ########################

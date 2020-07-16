@@ -44,8 +44,8 @@ class InitExp : public ExpBase<InitExp<Method, Dtype>, Dtype, type::keepDim> {
 
   InitExp(Dtype s = 0.0, Dtype e = 1.0) { engine.set(s, e); }
 
-  template <typename T>
-  FORCE_INLINE T Eval(index x, index y) {
+  template <typename T, typename Container = void>
+  FORCE_INLINE T Eval(index x, index y, Container* dst = nullptr) {
     return engine.template Eval<T>(x, y);
   }
 };

@@ -77,8 +77,8 @@ struct ImpExp<InitExp<Method, Dtype>> {
 
   template <typename T, typename Container = void>
   FORCE_INLINE T Eval(index x, index y, Container* dst = nullptr) const {
-    return const_cast<InitExp<Method, Dtype>*>(&_exp)->template Eval<T>(x, y,
-                                                                        dst);
+    return const_cast<InitExp<Method, Dtype>*>(&_exp)
+        ->template Eval<T, Container>(x, y, dst);
   }
 };
 
@@ -144,11 +144,9 @@ FORCE_INLINE void ExpEngineExcutor(
   auto exp = ImpExp<ExpType>(_exp.derived_to());
   auto dst = ImpExp<Tensor<T, Dim, type::device::cpu>>(_dst->derived_to());
 
-  auto shape = _dst->shape;
-  index ld = _dst->ld;
+  index ld = _dst->shape.dimx();
+  index size = _dst->_size;
   index packed_size = Packet::PacketHandle<T>::size();
-  index last = shape.last();
-  index size = shape.size();
 
   bool can_vec = dst.alignment_check();
   index end_vec = can_vec ? size - size % packed_size : 0;

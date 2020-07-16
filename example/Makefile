@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named KeepDimOpTest
+# Target rules for targets named InitTest
 
 # Build rule for target.
-KeepDimOpTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 KeepDimOpTest
-.PHONY : KeepDimOpTest
+InitTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 InitTest
+.PHONY : InitTest
 
 # fast build rule for target.
-KeepDimOpTest/fast:
-	$(MAKE) -f CMakeFiles/KeepDimOpTest.dir/build.make CMakeFiles/KeepDimOpTest.dir/build
-.PHONY : KeepDimOpTest/fast
+InitTest/fast:
+	$(MAKE) -f CMakeFiles/InitTest.dir/build.make CMakeFiles/InitTest.dir/build
+.PHONY : InitTest/fast
 
-OpTest/test.o: OpTest/test.cpp.o
+randinit/test.o: randinit/test.cpp.o
 
-.PHONY : OpTest/test.o
+.PHONY : randinit/test.o
 
 # target to build an object file
-OpTest/test.cpp.o:
-	$(MAKE) -f CMakeFiles/KeepDimOpTest.dir/build.make CMakeFiles/KeepDimOpTest.dir/OpTest/test.cpp.o
-.PHONY : OpTest/test.cpp.o
+randinit/test.cpp.o:
+	$(MAKE) -f CMakeFiles/InitTest.dir/build.make CMakeFiles/InitTest.dir/randinit/test.cpp.o
+.PHONY : randinit/test.cpp.o
 
-OpTest/test.i: OpTest/test.cpp.i
+randinit/test.i: randinit/test.cpp.i
 
-.PHONY : OpTest/test.i
+.PHONY : randinit/test.i
 
 # target to preprocess a source file
-OpTest/test.cpp.i:
-	$(MAKE) -f CMakeFiles/KeepDimOpTest.dir/build.make CMakeFiles/KeepDimOpTest.dir/OpTest/test.cpp.i
-.PHONY : OpTest/test.cpp.i
+randinit/test.cpp.i:
+	$(MAKE) -f CMakeFiles/InitTest.dir/build.make CMakeFiles/InitTest.dir/randinit/test.cpp.i
+.PHONY : randinit/test.cpp.i
 
-OpTest/test.s: OpTest/test.cpp.s
+randinit/test.s: randinit/test.cpp.s
 
-.PHONY : OpTest/test.s
+.PHONY : randinit/test.s
 
 # target to generate assembly for a file
-OpTest/test.cpp.s:
-	$(MAKE) -f CMakeFiles/KeepDimOpTest.dir/build.make CMakeFiles/KeepDimOpTest.dir/OpTest/test.cpp.s
-.PHONY : OpTest/test.cpp.s
+randinit/test.cpp.s:
+	$(MAKE) -f CMakeFiles/InitTest.dir/build.make CMakeFiles/InitTest.dir/randinit/test.cpp.s
+.PHONY : randinit/test.cpp.s
 
 # Help Target
 help:
@@ -157,11 +157,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... KeepDimOpTest"
+	@echo "... InitTest"
 	@echo "... edit_cache"
-	@echo "... OpTest/test.o"
-	@echo "... OpTest/test.i"
-	@echo "... OpTest/test.s"
+	@echo "... randinit/test.o"
+	@echo "... randinit/test.i"
+	@echo "... randinit/test.s"
 .PHONY : help
 
 

@@ -9,6 +9,8 @@
 ../src/Elastic.h
 Tensor.h
 ../src/Tensor.h
+tensor_imp.h
+../src/tensor_imp.h
 
 ../src/ExpBase.h
 OpRegister.h
@@ -27,8 +29,36 @@ Tensor.h
 ../src/Tensor.h
 base.h
 ../src/base.h
+matmul_enigen.h
+../src/matmul_enigen.h
 rand.h
 ../src/rand.h
+
+../src/Gemm.h
+GemmInnerLoop.h
+../src/GemmInnerLoop.h
+Pack.h
+../src/Pack.h
+base.h
+../src/base.h
+CublasProduct.h
+../src/CublasProduct.h
+testTools.h
+../src/testTools.h
+
+../src/GemmInnerLoop.h
+base.h
+../src/base.h
+GemmKernels.h
+../src/GemmKernels.h
+
+../src/GemmKernels.h
+Packet.h
+../src/Packet.h
+base.h
+../src/base.h
+memory.h
+../src/memory.h
 
 ../src/MetaTools.h
 tuple
@@ -43,6 +73,8 @@ base.h
 ../src/base.h
 Packet.h
 ../src/Packet.h
+
+../src/Pack.h
 
 ../src/Packet.h
 immintrin.h
@@ -84,6 +116,18 @@ numeric
 random
 -
 
+../src/matmul_enigen.h
+ExpBase.h
+../src/ExpBase.h
+Gemm.h
+../src/Gemm.h
+Shape.h
+../src/Shape.h
+base.h
+../src/base.h
+memory.h
+../src/memory.h
+
 ../src/memory.h
 base.h
 ../src/base.h
@@ -95,6 +139,18 @@ MetaTools.h
 ../src/MetaTools.h
 base.h
 ../src/base.h
+
+../src/tensor_imp.h
+Tensor.h
+../src/Tensor.h
+base.h
+../src/base.h
+
+../src/testTools.h
+iostream
+-
+string
+-
 
 /mnt/h/elastic/example/randinit/test.cpp
 iostream

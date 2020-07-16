@@ -4,13 +4,20 @@
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/Elastic.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/ExpBase.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/Exp_engine.h
+CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/Gemm.h
+CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/GemmInnerLoop.h
+CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/GemmKernels.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/MetaTools.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/OpRegister.h
+CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/Pack.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/Packet.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/Shape.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/Tensor.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/base.h
+CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/matmul_enigen.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/memory.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/rand.h
+CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/tensor_imp.h
+CMakeFiles/InitTest.dir/randinit/test.cpp.o: ../src/testTools.h
 CMakeFiles/InitTest.dir/randinit/test.cpp.o: randinit/test.cpp
 

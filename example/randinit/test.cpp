@@ -8,9 +8,9 @@ int main() {
   shape[0] = 10;
   shape[1] = 10;
   Tensor<float, 2, type::device::cpu> a(shape), b(shape), c(shape);
-  a.alloc();
-  b.alloc();
-  c.alloc();
+  AllocSpace(&a);
+  AllocSpace(&b);
+  AllocSpace(&c);
   a = rand_init<Distribution::Uniform>(0.0f, 1.0f);
   a.printMatrix();
   system("pause");

@@ -17,34 +17,19 @@ class Tensor : public ContainerWarpper<Tensor<T, Dim, Device>, T> {
   Tensor() {}
 
   Tensor(Shape<Dim> _shape) : shape(_shape), _size(_shape.size()) {
-    ld = _size / shape.last();
+    ld = shape.dimx();
   }
 
   Tensor(Shape<Dim> _shape, T* data) : shape(_shape), m_storage(data) {
     _size = shape.size();
-    ld = _size / shape.last();
-  }
-
-  ~Tensor() {
-    if (hasAlloc) aligned_free(m_storage);
+    ld = shape.dimx();
   }
 
   inline void set_ptr(T* ptr, Shape<Dim> _shape) {
-    if (hasAlloc) {
-      hasAlloc = false;
-      aligned_free(m_storage);
-    }
     m_storage = ptr;
     shape = _shape;
     _size = shape.size();
-    ld = _size / shape.last();
-  }
-
-  inline Tensor<T, 2, Device> flat2D() {
-    Shape<2> _temp;
-    _temp[0] = ld;
-    _temp[1] = shape.last();
-    return Tensor<T, 2, Device>(_temp, m_storage);
+    ld = shape.dimx();
   }
 
   inline Shape<Dim> getShape() { return this->shape; }
@@ -70,22 +55,19 @@ class Tensor : public ContainerWarpper<Tensor<T, Dim, Device>, T> {
     return Tensor<T, dim, Device>(_shape, m_storage);
   }
 
-  Tensor<T, 2, Device> Flat2D(Shape<2> shape) { return resize(shape); }
+  inline ELASTIC_CALL T* data() { return m_storage; }
 
-  inline void alloc() {
-    m_storage = mynew_fill0<T>(_size + 16, VECTORIZATION_ALIGN_BYTES);
-    hasAlloc = true;
+  inline ELASTIC_CALL T coeff(index idx) const { return *(m_storage + idx); }
+
+  inline ELASTIC_CALL T coeff(index r, index c) const {
+    return coeff(r + c * this->ld);
   }
 
-  inline T* data() { return m_storage; }
+  inline ELASTIC_CALL T& coeffRef(index idx) { return *(m_storage + idx); }
 
-  inline T coeff(index idx) const { return *(m_storage + idx); }
-
-  inline T coeff(index r, index c) const { return coeff(r + c * this->ld); }
-
-  inline T& coeffRef(index idx) { return *(m_storage + idx); }
-
-  inline T& coeffRef(index r, index c) { return coeffRef(r + c * this->ld); }
+  inline ELASTIC_CALL T& coeffRef(index r, index c) {
+    return coeffRef(r + c * this->ld);
+  }
 
   void printMatrix() {
     for (index i = 0; i < ld; ++i) {
