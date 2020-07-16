@@ -5,6 +5,9 @@
 
 namespace Elastic {
 
+template <typename type::device Device>
+struct Stream;
+
 template <typename T, int Dim, typename type::device Device>
 class Tensor : public ContainerWarpper<Tensor<T, Dim, Device>, T> {
  public:
@@ -13,6 +16,7 @@ class Tensor : public ContainerWarpper<Tensor<T, Dim, Device>, T> {
   index ld = 1, _size;
   Shape<Dim> shape;
   bool hasAlloc = false;
+  Stream<Device>* stream = nullptr;
 
   Tensor() {}
 

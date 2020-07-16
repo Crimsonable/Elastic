@@ -116,7 +116,7 @@ class BinaryExp : public ExpBase<BinaryExp<Op, Lhs, Rhs, Dtype, exp_type>,
     auto l_shape = _lhs.shape;
     auto r_shape = _rhs.shape;
     if (l_shape.size() != 0 && r_shape.size() != 0) {
-      CHECK_CON(!(l_shape == r_shape), "Shapes don't match for BinaryOp")
+      CHECK_CON(l_shape == r_shape, "Shapes don't match for BinaryOp")
       return l_shape;
     }
     return l_shape.size() == 0 ? r_shape : l_shape;
@@ -186,8 +186,8 @@ class MatMul : public ExpBase<MatMul<Lhs, Rhs, Dtype>, Dtype, type::complex> {
     auto r_shape = _rhs.shape;
     const int dim_l = getShapeDim<decltype(l_shape)>::dim;
     for (int i = 0; i < dim_l - 2; ++i)
-      CHECK_CON(l_shape[i] != r_shape[i], "Shapes don't match for MatmulOp")
-    CHECK_CON(l_shape.last() != r_shape[dim_l - 2],
+      CHECK_CON(l_shape[i] == r_shape[i], "Shapes don't match for MatmulOp")
+    CHECK_CON(l_shape.last() == r_shape[dim_l - 2],
               "Shapes don't match for MatmulOp")
     auto dst_shape = l_shape;
     dst_shape[dim_l - 1] = r_shape.last();

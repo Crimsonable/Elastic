@@ -11,6 +11,8 @@
 #include <numeric>
 #include <random>
 
+#include "MetaTools.h"
+
 namespace Elastic {
 namespace type {
 enum device { cpu, gpu };
@@ -23,8 +25,16 @@ using index = std::size_t;
 
 //#define DEBUG_INFO
 //#define _DEBUG
+#define ELASTIC_USE_CUDA 1
+
 #define VECTORIZATION_ALIGN_BYTES 32
 #define VEC_CALL
+
+#ifdef ELASTIC_USE_CUDA
+#include <cublas_v2.h>
+#include <cuda.h>
+#include <cuda_runtime.h>
+#endif
 
 #ifdef _MSC_VER
 #define FORCE_INLINE __forceinline
@@ -38,7 +48,13 @@ using index = std::size_t;
 #endif
 
 #define CHECK_CON(condition, message)  \
-  if (condition) {                     \
+  if (!condition) {                    \
     std::cout << message << std::endl; \
     abort();                           \
+  }
+
+#define ELASTIC_CUDA_CALL(func)                        \
+  {                                                    \
+    cudaError_t e = (func);                            \
+    CHECK_CON(e == cudaSuccess, cudaGetErrorString(e)) \
   }

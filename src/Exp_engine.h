@@ -26,17 +26,17 @@ struct ImpExp<Scalar<T>> {
 
   FORCE_INLINE bool alignment_check() { return true; }
 
-  template <
-      typename DataType, typename Container,
-      typename std::enable_if<std::is_arithmetic_v<DataType>>::type* = nullptr>
-  FORCE_INLINE DataType Eval(index x, index y, Container* dst = nullptr) const {
+  template <typename DataType, typename Container,
+            ENABLE_IF(std::is_arithmetic_v<DataType>)>
+  ELASTIC_CALL FORCE_INLINE DataType Eval(index x, index y,
+                                          Container* dst = nullptr) const {
     return _data;
   }
 
-  template <
-      typename DataType, typename Container,
-      typename std::enable_if<!std::is_arithmetic_v<DataType>>::type* = nullptr>
-  FORCE_INLINE DataType Eval(index x, index y, Container* dst = nullptr) const {
+  template <typename DataType, typename Container,
+            ENABLE_IF(!std::is_arithmetic_v<DataType>)>
+  ELASTIC_CALL FORCE_INLINE DataType Eval(index x, index y,
+                                          Container* dst = nullptr) const {
     return Packet::PacketHandle<T>::fill(const_cast<T*>(&_data));
   }
 };
@@ -51,17 +51,17 @@ struct ImpExp<Tensor<T, Dim, Device>> {
     return Packet::PacketHandle<T>::alignment_check(_data.m_storage);
   }
 
-  template <
-      typename DataType, typename Container = void,
-      typename std::enable_if<std::is_arithmetic_v<DataType>>::type* = nullptr>
-  FORCE_INLINE DataType& Eval(index x, index y, Container* dst = nullptr) {
+  template <typename DataType, typename Container = void,
+            ENABLE_IF(std::is_arithmetic_v<DataType>)>
+  ELASTIC_CALL FORCE_INLINE DataType& Eval(index x, index y,
+                                           Container* dst = nullptr) {
     return const_cast<Tensor<T, Dim, Device>*>(&_data)->coeffRef(x, y);
   }
 
-  template <
-      typename DataType, typename Container = void,
-      typename std::enable_if<!std::is_arithmetic_v<DataType>>::type* = nullptr>
-  FORCE_INLINE DataType Eval(index x, index y, Container* dst = nullptr) {
+  template <typename DataType, typename Container = void,
+            ENABLE_IF(!std::is_arithmetic_v<DataType>)>
+  ELASTIC_CALL FORCE_INLINE DataType Eval(index x, index y,
+                                          Container* dst = nullptr) {
     return Packet::PacketHandle<T>::load(
         &const_cast<Tensor<T, Dim, Device>*>(&_data)->coeffRef(x, y));
   }
@@ -76,7 +76,8 @@ struct ImpExp<InitExp<Method, Dtype>> {
   FORCE_INLINE bool alignment_check() { return true; }
 
   template <typename T, typename Container = void>
-  FORCE_INLINE T Eval(index x, index y, Container* dst = nullptr) const {
+  ELASTIC_CALL FORCE_INLINE T Eval(index x, index y,
+                                   Container* dst = nullptr) const {
     return const_cast<InitExp<Method, Dtype>*>(&_exp)
         ->template Eval<T, Container>(x, y, dst);
   }
@@ -95,7 +96,8 @@ struct ImpExp<BinaryExp<Op, Lhs, Rhs, Dtype, exp_type>> {
   }
 
   template <typename DataType, typename Container = void>
-  FORCE_INLINE DataType Eval(index x, index y, Container* dst = nullptr) const {
+  ELASTIC_CALL FORCE_INLINE DataType Eval(index x, index y,
+                                          Container* dst = nullptr) const {
     return Op::apply(
         const_cast<ImpExp<Lhs>*>(&_lhs)->template Eval<DataType, Container>(
             x, y, dst),
@@ -114,7 +116,8 @@ struct ImpExp<UnaryExp<Op, SelfType, Dtype, exp_type>> {
   FORCE_INLINE bool alignment_check() { return _self.alignment_check(); }
 
   template <typename DataType, typename Container = void>
-  FORCE_INLINE DataType Eval(index x, index y, Container* dst = nullptr) const {
+  ELASTIC_CALL FORCE_INLINE DataType Eval(index x, index y,
+                                          Container* dst = nullptr) const {
     return Op::apply(_self.template Eval<DataType>(x, y, dst));
   }
 };
@@ -124,7 +127,7 @@ struct ScalarSaver;
 
 template <typename Dtype, typename Op>
 struct ScalarSaver {
-  FORCE_INLINE static void save(Dtype& dst, const Dtype& src) {
+  ELASTIC_CALL FORCE_INLINE static void save(Dtype& dst, const Dtype& src) {
     Op::apply(dst, src);
   }
 };
@@ -132,7 +135,7 @@ struct ScalarSaver {
 template <typename Dtype, typename Op>
 struct PacketSaver {
   template <typename T>
-  FORCE_INLINE static void save(Dtype& dst, const T& src) {
+  ELASTIC_CALL FORCE_INLINE static void save(Dtype& dst, const T& src) {
     Op::apply(dst, src);
   }
 };

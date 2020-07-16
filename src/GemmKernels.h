@@ -56,9 +56,10 @@ FORCE_INLINE void VEC_CALL Gemm_kernel_avx256(float *a, const int &lda,
   }
 
   if (leftRows != 16) {
-    __m256i mask = _mm256_setzero_si256();
+    __attribute__((aligned(VECTORIZATION_ALIGN_BYTES))) int temp[8] = {0};
+    __m256i mask = *reinterpret_cast<__m256i *>(temp);
     if (leftRows > 8) {
-      for (int i = 0; i < leftRows - 8; ++i) *((int *)(&mask) + i) = -1;
+      for (int i = 0; i < leftRows - 8; ++i) mask[i] = -1;
       _mm256_store_ps(c + m3 * ldc, c6);
       _mm256_maskstore_ps(c + m3 * ldc + 8, mask, c7);
       _mm256_store_ps(c + m2 * ldc, c4);

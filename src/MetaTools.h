@@ -4,8 +4,7 @@
 #define IS_SAME(T1, T2) std::is_same_v<T1, T2>
 #define IS_BASE_OF(Base, Type) \
   std::is_base_of_v<Base, std::remove_reference_t<Type>>
-#define ENABLE_IF(Condition) \
-  typename std::enable_if<Condition, int>::type = 0
+#define ENABLE_IF(Condition) typename std::enable_if<Condition>::type* = nullptr
 
 namespace CSM {
 template <typename Types>

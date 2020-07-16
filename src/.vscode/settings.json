@@ -58,7 +58,8 @@
         "mutex": "cpp",
         "sstream": "cpp",
         "streambuf": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "*.cuh": "cpp"
     },
     "C_Cpp.clang_format_fallbackStyle": "Google"
 }
