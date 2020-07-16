@@ -68,9 +68,7 @@ template <typename T, typename type::device Device>
 struct BlasEnigen;
 
 template <typename T>
-struct BlasEnigen<T, type::device::gpu> {
-
-};
+struct BlasEnigen<T, type::device::gpu> {};
 
 template <typename T, int Dim>
 __host__ FORCE_INLINE void AllocSpace(Tensor<T, Dim, type::device::gpu>* dst,
