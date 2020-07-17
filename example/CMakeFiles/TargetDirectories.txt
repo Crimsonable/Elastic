@@ -1,3 +1,0 @@
-/mnt/h/elastic/example/CMakeFiles/rebuild_cache.dir
-/mnt/h/elastic/example/CMakeFiles/InitTest.dir
-/mnt/h/elastic/example/CMakeFiles/edit_cache.dir

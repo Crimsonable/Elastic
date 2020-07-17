@@ -1,9 +1,10 @@
 #pragma once
+#include "base.h"
 #include "ExpBase.h"
 #include "OpRegister.h"
 #include "Tensor.h"
-#include "base.h"
 #include "matmul_enigen.h"
+#include "tensor_imp_cpu.h"
 #include "rand.h"
 
 using Packet::PacketHandle;
@@ -123,9 +124,6 @@ struct ImpExp<UnaryExp<Op, SelfType, Dtype, exp_type>> {
 };
 
 template <typename Dtype, typename Op>
-struct ScalarSaver;
-
-template <typename Dtype, typename Op>
 struct ScalarSaver {
   ELASTIC_CALL FORCE_INLINE static void save(Dtype& dst, const Dtype& src) {
     Op::apply(dst, src);
@@ -139,70 +137,6 @@ struct PacketSaver {
     Op::apply(dst, src);
   }
 };
-
-template <typename Op, typename T, int Dim, typename ExpType, typename Dtype>
-FORCE_INLINE void ExpEngineExcutor(
-    Tensor<T, Dim, type::device::cpu>* _dst,
-    const ExpBase<ExpType, Dtype, type::keepDim>& _exp) {
-  auto exp = ImpExp<ExpType>(_exp.derived_to());
-  auto dst = ImpExp<Tensor<T, Dim, type::device::cpu>>(_dst->derived_to());
-
-  index ld = _dst->shape.dimx();
-  index size = _dst->_size;
-  index packed_size = Packet::PacketHandle<T>::size();
-
-  bool can_vec = dst.alignment_check();
-  index end_vec = can_vec ? size - size % packed_size : 0;
-
-#pragma omp parallel
-  {
-#pragma omp for nowait
-    for (index idx = 0; idx < end_vec; idx += packed_size) {
-      PacketSaver<T, Op>::template save<typename PacketHandle<T>::type>(
-          dst.template Eval<T>(idx % ld, idx / ld),
-          exp.template Eval<typename PacketHandle<T>::type>(idx % ld,
-                                                            idx / ld));
-    }
-    for (index idx = end_vec; idx < size; ++idx) {
-      ScalarSaver<T, Op>::save(dst.template Eval<T>(idx % ld, idx / ld),
-                               exp.template Eval<T>(idx % ld, idx / ld));
-    }
-  }
-}
-
-template <typename Op, typename T, int Dim, typename ExpType, typename Dtype>
-FORCE_INLINE void ExpEngineExcutor(
-    Tensor<T, Dim, type::device::cpu>* _dst,
-    const ExpBase<ExpType, Dtype, type::complex>& _exp) {
-  auto exp = ImpExp<ExpType>(_exp.derived_to());
-  auto dst = ImpExp<Tensor<T, Dim, type::device::cpu>>(_dst->derived_to());
-  using Container = Tensor<T, Dim, type::device::cpu>;
-
-  auto shape = _dst->shape;
-  index ld = _dst->ld;
-  index packed_size = Packet::PacketHandle<T>::size();
-  index last = shape.last();
-  index size = shape.size();
-
-  bool can_vec = dst.alignment_check();
-  index end_vec = can_vec ? size - size % packed_size : 0;
-
-#pragma omp parallel
-  {
-#pragma omp for nowait
-    for (index idx = 0; idx < end_vec; idx += packed_size) {
-      PacketSaver<T, Op>::template save<typename PacketHandle<T>::type>(
-          dst.template Eval<T>(idx % ld, idx / ld),
-          exp.template Eval<typename PacketHandle<T>::type, Container>(
-              idx % ld, idx / ld, _dst));
-    }
-    for (index idx = end_vec; idx < size; ++idx) {
-      ScalarSaver<T, Op>::save(
-          dst.template Eval<T>(idx % ld, idx / ld),
-          exp.template Eval<T, Container>(idx % ld, idx / ld, _dst));
-    }
-  }
-}
 
 template <typename Container, typename Dtype>
 class ComplexEngine {

@@ -3,7 +3,7 @@
 #include <chrono>
 #include <iostream>
 
-#include "Elastic.h"
+#include "../../Elastic.h"
 
 #define M 2048
 #define K 2048

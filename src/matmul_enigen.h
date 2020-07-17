@@ -48,9 +48,9 @@ class ImpExp<MatMul<Lhs, Rhs, Dtype>> {
     if (!evaled) {
       assign_memory(dst);
       BlasEnigen<Dtype, ExpTraits<Lhs>::dev>::gemm(
-          l_buffer.data(), l_buffer.ld, r_buffer.data(), r_buffer.ld,
-          d_buffer->data(), d_buffer->ld, _exp.shape[0], _exp._lhs.shape[1],
-          _exp.shape[1]);
+          dst->stream, false, l_buffer.data(), l_buffer.ld, false,
+          r_buffer.data(), r_buffer.ld, d_buffer->data(), d_buffer->ld,
+          _exp.shape[0], _exp._lhs.shape[1], _exp.shape[1]);
       evaled = true;
       destory(&l_buffer);
       destory(&r_buffer);
@@ -65,9 +65,9 @@ class ImpExp<MatMul<Lhs, Rhs, Dtype>> {
     if (!evaled) {
       assign_memory(dst);
       BlasEnigen<Dtype, ExpTraits<Lhs>::dev>::gemm(
-          l_buffer.data(), l_buffer.ld, r_buffer.data(), r_buffer.ld,
-          d_buffer->data(), d_buffer->ld, _exp.shape[0], _exp._lhs.shape[1],
-          _exp.shape[1]);
+          dst->stream, false, l_buffer.data(), l_buffer.ld, false,
+          r_buffer.data(), r_buffer.ld, d_buffer->data(), d_buffer->ld,
+          _exp.shape[0], _exp._lhs.shape[1], _exp.shape[1]);
       evaled = true;
       destory(&l_buffer);
       destory(&r_buffer);
@@ -76,8 +76,9 @@ class ImpExp<MatMul<Lhs, Rhs, Dtype>> {
   }
 };
 
-template <typename T, int Dim, typename Lhs, typename Rhs, typename Dtype>
-FORCE_INLINE void ComplexEngineExcutor(Tensor<T, Dim, type::device::cpu>* _dst,
+template <typename T, int Dim, typename Lhs, typename Rhs,
+          typename type::device Device, typename Dtype>
+FORCE_INLINE void ComplexEngineExcutor(Tensor<T, Dim, Device>* _dst,
                                        const MatMul<Lhs, Rhs, Dtype>& _exp) {
   auto exp = ImpExp<MatMul<Lhs, Rhs, Dtype>>(_exp);
   exp.template Eval<T>(0, 0, _dst);

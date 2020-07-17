@@ -2,11 +2,9 @@
 #include "Exp_engine.h"
 #include "Shape.h"
 #include "memory.h"
+#include "stream.h"
 
 namespace Elastic {
-
-template <typename type::device Device>
-struct Stream;
 
 template <typename T, int Dim, typename type::device Device>
 class Tensor : public ContainerWarpper<Tensor<T, Dim, Device>, T> {
