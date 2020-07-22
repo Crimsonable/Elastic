@@ -4,6 +4,10 @@
 #include "stream.h"
 
 namespace Elastic {
+const int BaseThreadNum = 256;
+const int BaseThreadNum_bit = 8;
+const int MaxGridNum = 65535;
+
 template <typename Derived, typename Dtype, int exp_type>
 class ExpBase;
 
@@ -12,6 +16,12 @@ class Tensor;
 
 template <typename ExpType>
 struct ImpExp;
+
+template <typename T>
+struct ExpTraits;
+
+template <typename Dtype, typename Op>
+struct ScalarSaver;
 
 template <typename type::device Device, ENABLE_IF(Device == type::device::gpu)>
 inline Stream<Device>* NewStream(bool create_blas_handle) {
@@ -72,4 +82,42 @@ __host__ FORCE_INLINE void destory(Tensor<T, Dim, type::device::gpu>* dst) {
     dst->m_storage = nullptr;
   }
 }
+
+template <typename Saver, int block_dim_bits, typename DstImp, typename ExpImp>
+__device__ void BasicKernelEval(DstImp dst, index ld, Shape<2> shape,
+                                const ExpImp exp, int block_idx) {
+  const index_t tid = (block_idx << block_dim_bits) + threadIdx.x;
+  const int y = tid / ld;
+  const int x = tid % ld;
+  if (y < dshape[0] && x < dshape[1]) {
+    Saver::save(dst.Eval(y, x), exp.Eval(y, x));
+  }
+}
+
+template <typename Saver, int block_dim_bits, typename DstImp, typename ExpImp>
+__global__ void KernelEval(DstImp dst, const index ld, Shape<2> shape,
+                           const ExpImp exp) {}
+
+template <typename Op, typename T, int Dim, typename ExpType, typename Dtype,
+          int exp_type>
+FORCE_INLINE void ExpEngineExcutor(
+    Tensor<T, Dim, type::device::gpu>* _dst,
+    const ExpBase<ExpType, Dtype, exp_type>& _exp) {
+  static_assert(type::device::gpu == ExpTraits<ExpType>::dev,
+                "Target's device(gpu) does't match the device of Op(cpu)");
+
+  auto exp = ImpExp<ExpType>(_exp.derived_to());
+  auto dst = ImpExp<Tensor<T, Dim, type::device::gpu>>(_dst->derived_to());
+
+  Shape<2> shape = _dst.shape.Flat2d();
+  const int num_blocks =
+      (_dst->ld * shape[1] + BaseThreadNum - 1) / BaseThreadNum;
+
+  if (num_blocks < MaxGridNum) {
+    dim3 grid_dim(num_blocks, 1, 1);
+    KernelEval<ScalarSaver<T, Op>, BaseThreadNum_bit, decltype(dst),
+               decltype(dst)>(dst, _dst->ld, shape, exp);
+  }
+}
+
 }  // namespace Elastic

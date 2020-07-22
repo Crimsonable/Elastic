@@ -10,7 +10,7 @@ template <typename T, int Dim, typename type::device Device>
 class Tensor : public ContainerWarpper<Tensor<T, Dim, Device>, T> {
  public:
   T* m_storage = nullptr;
-  type::device dev = Device;
+  static constexpr type::device device = Device;
   index ld = 1, _size;
   Shape<Dim> shape;
   bool hasAlloc = false;

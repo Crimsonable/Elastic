@@ -5,6 +5,9 @@
 
 namespace Elastic {
 
+template <typename T>
+struct ExpTraits;
+
 template <typename Op, typename Container, typename Dtype>
 class ExpEngine;
 
@@ -109,6 +112,7 @@ class BinaryExp : public ExpBase<BinaryExp<Op, Lhs, Rhs, Dtype, exp_type>,
     static_assert(getShapeDim<decltype(_lhs.shape)>::dim ==
                       getShapeDim<decltype(_rhs.shape)>::dim,
                   "Dims don't match for BinaryOp");
+    static_assert(ExpTraits<Lhs>::dev == ExpTraits<Rhs>::dev, "Op's device does't match");
     shape = getShape();
   }
 
@@ -178,6 +182,7 @@ class MatMul : public ExpBase<MatMul<Lhs, Rhs, Dtype>, Dtype, type::complex> {
     static_assert(getShapeDim<decltype(_lhs.shape)>::dim ==
                       getShapeDim<decltype(_rhs.shape)>::dim,
                   "Dims don't match for MatmulOp");
+    static_assert(ExpTraits<Lhs>::dev == ExpTraits<Rhs>::dev, "Op's device does't match");
     shape = getShape();
   }
 
@@ -200,9 +205,6 @@ inline MatMul<Lhs, Rhs, Dtype> dot(const ExpBase<Lhs, Dtype, tl>& l,
                                    const ExpBase<Rhs, Dtype, tr>& r) {
   return MatMul<Lhs, Rhs, Dtype>(l.derived_to(), r.derived_to());
 }
-
-template <typename T>
-struct ExpTraits;
 
 template <typename Op, typename SelfType, typename Dtype, int exp_type>
 struct ExpTraits<UnaryExp<Op, SelfType, Dtype, exp_type>> {

@@ -62,21 +62,25 @@ FORCE_INLINE void destory(Tensor<T, Dim, type::device::cpu>* dst) {
   }
 }
 
-template <typename Op, typename T, int Dim, typename ExpType, typename Dtype, int exp_type>
+template <typename Op, typename T, int Dim, typename ExpType, typename Dtype,
+          int exp_type>
 FORCE_INLINE void ExpEngineExcutor(
     Tensor<T, Dim, type::device::cpu>* _dst,
     const ExpBase<ExpType, Dtype, exp_type>& _exp) {
+  static_assert(type::device::cpu == ExpTraits<ExpType>::dev,
+                "Target's device(cpu) does't match the device of Op(gpu)");
+
   auto exp = ImpExp<ExpType>(_exp.derived_to());
   auto dst = ImpExp<Tensor<T, Dim, type::device::cpu>>(_dst->derived_to());
   using Container = Tensor<T, Dim, type::device::cpu>;
 
   auto shape = _dst->shape;
   index ld = _dst->ld;
-  index packed_size = Packet::PacketHandle<T>::size();
   index last = shape.last();
   index size = shape.size();
 
   bool can_vec = dst.alignment_check();
+  index packed_size = Packet::PacketHandle<T>::size();
   index end_vec = can_vec ? size - size % packed_size : 0;
 
 #pragma omp parallel
