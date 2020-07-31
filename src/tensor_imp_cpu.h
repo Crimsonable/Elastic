@@ -20,54 +20,13 @@ struct ScalarSaver;
 template <typename Dtype, typename Op>
 struct PacketSaver;
 
-template <typename T, typename type::device Device>
-struct BlasEnigen;
-
-template <typename T>
-struct BlasEnigen<T, type::device::cpu> {
-  constexpr static type::device device = type::device::cpu;
-
-  inline static void setStream(Stream<device>* stream) {}
-
-  inline static void gemm(Stream<device>* stream, bool l_trans, T* A,
-                          const int& lda, bool r_trans, T* B, const int& ldb,
-                          T* C, const int& ldc, int m, int n, int k) {
-    CSM::Gemm(A, lda, B, ldb, C, ldc, m, n, k);
-  }
-};
-
-template <typename T, int Dim>
-FORCE_INLINE void AllocSpace(Tensor<T, Dim, type::device::cpu>* dst,
-                             bool pad = false) {
-  index real_size = dst->_size;
-  index ld = dst->ld;
-  if (pad) {
-    index dimx = dst->shape.dimx();
-    Shape<Dim> _temp = dst->shape;
-    dimx = dimx / VECTORIZATION_ALIGN_BYTES * VECTORIZATION_ALIGN_BYTES +
-           dimx % VECTORIZATION_ALIGN_BYTES;
-    _temp[Dim - 2] = dimx;
-    ld = dimx;
-    real_size = _temp.size();
-  }
-  dst->m_storage = mynew_fill0<T>(real_size, VECTORIZATION_ALIGN_BYTES);
-  dst->hasAlloc = true;
-}
-
-template <typename T, int Dim>
-FORCE_INLINE void destory(Tensor<T, Dim, type::device::cpu>* dst) {
-  if (dst->hasAlloc) {
-    aligned_free(dst->m_storage);
-    dst->m_storage = nullptr;
-  }
-}
-
 template <typename Op, typename T, int Dim, typename ExpType, typename Dtype,
           int exp_type>
 FORCE_INLINE void ExpEngineExcutor(
     Tensor<T, Dim, type::device::cpu>* _dst,
     const ExpBase<ExpType, Dtype, exp_type>& _exp) {
-  static_assert(type::device::cpu == ExpTraits<ExpType>::dev,
+  static_assert(ExpTraits<ExpType>::dev == type::device::None ||
+                    type::device::cpu == ExpTraits<ExpType>::dev,
                 "Target's device(cpu) does't match the device of Op(gpu)");
 
   auto exp = ImpExp<ExpType>(_exp.derived_to());

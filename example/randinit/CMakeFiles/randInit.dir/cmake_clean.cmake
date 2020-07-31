@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/randInit.dir/test.cpp.obj"
+  "CMakeFiles/randInit.dir/test.cpp.o"
   "randInit.pdb"
-  "randInit.exe"
-  "randInit.exe.manifest"
-  "librandInit.dll.a"
+  "randInit"
 )
 
 # Per-language clean rules from dependency scanning.

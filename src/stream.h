@@ -1,13 +1,14 @@
 #pragma once
 #include "base.h"
 
-namespace Elastic{
-    template <typename type::device Device>
+namespace Elastic {
+template <typename type::device Device>
 struct Stream;
 
 template <>
 struct Stream<type::device::cpu> {};
 
+#if ELASTIC_USE_CUDA
 template <>
 struct Stream<type::device::gpu> {
   cudaStream_t stream = NULL;
@@ -48,5 +49,5 @@ struct Stream<type::device::gpu> {
               "Fail to set cublas stream")
   }
 };
-
-}
+#endif
+}  // namespace Elastic

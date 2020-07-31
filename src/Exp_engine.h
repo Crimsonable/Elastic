@@ -68,18 +68,18 @@ struct ImpExp<Tensor<T, Dim, Device>> {
   }
 };
 
-template <int Method, typename Dtype>
-struct ImpExp<InitExp<Method, Dtype>> {
-  const InitExp<Method, Dtype>& _exp;
+template <int Method, typename Dtype, typename type::device Device>
+struct ImpExp<InitExp<Method, Dtype, Device>> {
+  const InitExp<Method, Dtype, Device>& _exp;
 
-  ImpExp(const InitExp<Method, Dtype>& exp) : _exp(exp) {}
+  ImpExp(const InitExp<Method, Dtype, Device>& exp) : _exp(exp) {}
 
   FORCE_INLINE bool alignment_check() { return true; }
 
   template <typename T, typename Container = void>
   ELASTIC_CALL FORCE_INLINE T Eval(index x, index y,
                                    Container* dst = nullptr) const {
-    return const_cast<InitExp<Method, Dtype>*>(&_exp)
+    return const_cast<InitExp<Method, Dtype, Device>*>(&_exp)
         ->template Eval<T, Container>(x, y, dst);
   }
 };

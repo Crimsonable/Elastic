@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "H:/elastic/example/randinit/test.cpp" "H:/elastic/example/randinit/CMakeFiles/randInit.dir/test.cpp.obj"
+  "/mnt/h/elastic/example/randinit/test.cpp" "/mnt/h/elastic/example/randinit/CMakeFiles/randInit.dir/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/include"
   )
 
 # Targets to which this target links.

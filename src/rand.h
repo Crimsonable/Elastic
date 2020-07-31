@@ -37,8 +37,9 @@ struct RandEngine<Distribution::Uniform, T> {
   }
 };
 
-template <int Method, typename Dtype>
-class InitExp : public ExpBase<InitExp<Method, Dtype>, Dtype, type::keepDim> {
+template <int Method, typename Dtype, typename type::device Device>
+class InitExp
+    : public ExpBase<InitExp<Method, Dtype, Device>, Dtype, type::keepDim> {
  public:
   RandEngine<Method, Dtype> engine;
 
@@ -50,9 +51,14 @@ class InitExp : public ExpBase<InitExp<Method, Dtype>, Dtype, type::keepDim> {
   }
 };
 
-template <int Method, typename T>
-inline InitExp<Method, T> rand_init(T s, T e) {
-  return InitExp<Method, T>(s, e);
+template <int Method, typename T, typename type::device Device>
+inline InitExp<Method, T, Device> rand_init(T s, T e) {
+  return InitExp<Method, T, Device>(s, e);
 }
 
+template <int Method, typename T, typename type::device Device>
+struct ExpTraits<InitExp<Method, T, Device>> {
+  static constexpr type::device dev = type::device::None;
+  static constexpr bool exp = true;
+};
 }  // namespace Elastic

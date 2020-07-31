@@ -8,14 +8,16 @@ int main() {
   shape[0] = 10;
   shape[1] = 10;
   //auto s = NewStream<type::device::gpu>(true);
-  Tensor<float, 2, type::device::gpu> a(shape), b(shape), c(shape);
+  Tensor<float, 2, type::device::cpu> a(shape), b(shape), c(shape);
   //a.stream = s;
   AllocSpace(&a);
   AllocSpace(&b);
   AllocSpace(&c);
-  //a = rand_init<Distribution::Uniform>(0.0f, 1.0f);
+  b = rand_init<Distribution::Uniform,float,type::cpu>(0.0f, 1.0f);
   a = b + c;
-  //a.printMatrix();
-  system("pause");
+  a.printMatrix();
+  destory(&a);
+  destory(&b);
+  destory(&c);
   return 1;
 }

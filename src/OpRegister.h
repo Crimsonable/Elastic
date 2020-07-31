@@ -12,17 +12,17 @@ using Packet::operator-, Packet::operator*, Packet::operator+;
     namespace OP {
 struct NoneOp {
   template <typename Dtype>
-  FORCE_INLINE static void apply(Dtype& dst, Dtype& val) {}
+  ELASTIC_CALL FORCE_INLINE static void apply(Dtype& dst, Dtype& val) {}
   using OpType = NoneOp;
 };
 
 struct assign {
   template <typename Dtype>
-  FORCE_INLINE static void apply(Dtype& dst, const Dtype& src) {
+  ELASTIC_CALL FORCE_INLINE static void apply(Dtype& dst, const Dtype& src) {
     dst = src;
   }
   template <typename T, typename Dtype>
-  FORCE_INLINE static void apply(T& dst, const Dtype& src) {
+  ELASTIC_CALL FORCE_INLINE static void apply(T& dst, const Dtype& src) {
     Packet::PacketHandle<T>::store(&dst, src);
   }
 
@@ -31,12 +31,12 @@ struct assign {
 
 struct plusto {
   template <typename T>
-  FORCE_INLINE static void apply(T& dst, const T& src) {
+  ELASTIC_CALL FORCE_INLINE static void apply(T& dst, const T& src) {
     dst += src;
   }
 
   template <typename T, typename Dtype>
-  FORCE_INLINE static void apply(T& dst, const Dtype& src) {
+  ELASTIC_CALL FORCE_INLINE static void apply(T& dst, const Dtype& src) {
     PacketHandle<T>::store(&dst, PacketHandle<T>::load(&dst) + src);
   }
   using OpType = plusto;
@@ -44,12 +44,12 @@ struct plusto {
 
 struct minusto {
   template <typename T>
-  FORCE_INLINE static void apply(T& dst, const T& src) {
+  ELASTIC_CALL FORCE_INLINE static void apply(T& dst, const T& src) {
     dst -= src;
   }
 
   template <typename T, typename Dtype>
-  FORCE_INLINE static void apply(T& dst, const Dtype& src) {
+  ELASTIC_CALL FORCE_INLINE static void apply(T& dst, const Dtype& src) {
     PacketHandle<T>::store(&dst, PacketHandle<T>::load(&dst) - src);
   }
   using OpType = minusto;
@@ -57,12 +57,12 @@ struct minusto {
 
 struct multo {
   template <typename T>
-  FORCE_INLINE static void apply(T& dst, const T& src) {
+  ELASTIC_CALL FORCE_INLINE static void apply(T& dst, const T& src) {
     dst *= src;
   }
 
   template <typename T, typename Dtype>
-  FORCE_INLINE static void apply(T& dst, const Dtype& src) {
+  ELASTIC_CALL FORCE_INLINE static void apply(T& dst, const Dtype& src) {
     PacketHandle<T>::store(&dst, PacketHandle<T>::load(&dst) * src);
   }
   using OpType = multo;
@@ -70,7 +70,7 @@ struct multo {
 
 struct plus {
   template <typename Dtype>
-  FORCE_INLINE static Dtype apply(const Dtype& a, const Dtype& b) {
+  ELASTIC_CALL FORCE_INLINE static Dtype apply(const Dtype& a, const Dtype& b) {
     return a + b;
   }
   using OpType = plus;
@@ -78,7 +78,7 @@ struct plus {
 
 struct minus {
   template <typename Dtype>
-  FORCE_INLINE static Dtype apply(const Dtype& a, const Dtype& b) {
+  ELASTIC_CALL FORCE_INLINE static Dtype apply(const Dtype& a, const Dtype& b) {
     return a - b;
   }
   using OpType = minus;
@@ -86,7 +86,7 @@ struct minus {
 
 struct mul {
   template <typename Dtype>
-  FORCE_INLINE static Dtype apply(const Dtype& a, const Dtype& b) {
+  ELASTIC_CALL FORCE_INLINE static Dtype apply(const Dtype& a, const Dtype& b) {
     return a * b;
   }
   using OpType = mul;
