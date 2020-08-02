@@ -20,6 +20,29 @@ struct ExpTraits;
 template <typename Dtype, typename Op>
 struct ScalarSaver;
 
+template <typename type::device Device_1, typename type::device Device_2,
+          typename T, int Dim>
+inline void Copy(const Tensor<T, Dim, Device_1>& src,
+                 Tensor<T, Dim, Device_2>& dst);
+
+template <typename T, int Dim>
+inline void Copy(const Tensor<T, Dim, type::device::gpu>& src,
+                 Tensor<T, Dim, type::device::cpu>& dst) {
+  auto _shape = src.shape.Flat2d();
+  ELASTIC_CUDA_CALL(cudaMemcpy2D(dst.m_storage, dst.ld * sizeof(T), src.m_storage,
+               src.ld * sizeof(T), _shape.dimx() * sizeof(T),
+               _shape.size() / _shape.dimx(), cudaMemcpyDeviceToHost));
+}
+
+template <typename T, int Dim>
+inline void Copy(const Tensor<T, Dim, type::device::cpu>& src,
+                 Tensor<T, Dim, type::device::gpu>& dst) {
+  auto _shape = src.shape.Flat2d();
+  ELASTIC_CUDA_CALL(cudaMemcpy2D(dst.m_storage, dst.ld * sizeof(T), src.m_storage,
+               src.ld * sizeof(T), _shape.dimx() * sizeof(T),
+               _shape.size() / _shape.dimx(), cudaMemcpyHostToDevice));
+}
+
 template <typename type::device Device, ENABLE_IF(Device == type::device::gpu)>
 inline Stream<Device>* NewStream(bool create_blas_handle) {
   struct StreamDealloctor {
@@ -40,15 +63,16 @@ template <typename Op, typename T, int Dim, typename ExpType, typename Dtype,
 FORCE_INLINE void ExpEngineExcutor(
     Tensor<T, Dim, type::device::gpu>* _dst,
     const ExpBase<ExpType, Dtype, exp_type>& _exp) {
-  static_assert(type::device::gpu == ExpTraits<ExpType>::dev,
+  static_assert(ExpTraits<ExpType>::dev == type::device::None ||
+                    type::device::gpu == ExpTraits<ExpType>::dev,
                 "Target's device(gpu) does't match the device of Op(cpu)");
 
   auto exp = ImpExp<ExpType>(_exp.derived_to());
   auto dst = ImpExp<Tensor<T, Dim, type::device::gpu>>(_dst->derived_to());
   auto _stream = Stream<type::device::gpu>::getStream(_dst->stream);
 
-  cuda::KernelEntry<ScalarSaver<T, Op>, Tensor<T, Dim, type::gpu>, ExpType>(
-      dst, exp, _stream, _dst->shape.Flat2d(), dst->ld);
+  cuda::KernelEntry<ScalarSaver<T, Op>, Tensor<T, Dim, type::gpu>, ExpType,
+                    Dtype>(dst, exp, _stream, _dst->shape.Flat2d(), _dst->ld);
 }
 
 }  // namespace Elastic

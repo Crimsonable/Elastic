@@ -6,7 +6,9 @@
 using Packet::PacketHandle;
 
 #ifdef _MSC_VER
-using Packet::operator-, Packet::operator*, Packet::operator+;
+using Packet::operator-;
+using Packet::operator*;
+using Packet::operator+;
 #endif
 
     namespace OP {

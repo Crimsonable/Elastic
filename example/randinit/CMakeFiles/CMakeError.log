@@ -1,0 +1,79 @@
+Determining if the CUDA compiler works failed with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_d0a2d/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_d0a2d.dir\build.make CMakeFiles/cmTC_d0a2d.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building CUDA object CMakeFiles/cmTC_d0a2d.dir/main.cu.obj
+C:\PROGRA~1\NVIDIA~2\CUDA\v10.2\bin\nvcc.exe    -D_WINDOWS -Xcompiler="/W3 /GR /EHsc"  -Xcompiler="-MDd -Zi -Ob0 -Od /RTC1"   -x cu -c H:\elastic\example\randinit\CMakeFiles\CMakeTmp\main.cu -o CMakeFiles\cmTC_d0a2d.dir\main.cu.obj -Xcompiler=-FdCMakeFiles\cmTC_d0a2d.dir/,-FS
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h: warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h(925): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h: warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h(925): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+main.cu
+Linking CUDA device code CMakeFiles\cmTC_d0a2d.dir\cmake_device_link.obj
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_d0a2d.dir\dlink.txt --verbose=1
+C:\PROGRA~1\NVIDIA~2\CUDA\v10.2\bin\nvcc.exe -D_WINDOWS -Xcompiler="/W3 /GR /EHsc"  -Xcompiler="-MDd -Zi -Ob0 -Od /RTC1" -Wno-deprecated-gpu-targets -shared -dlink CMakeFiles/cmTC_d0a2d.dir/main.cu.obj -o CMakeFiles\cmTC_d0a2d.dir\cmake_device_link.obj kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib  -Xcompiler=-FdH:\elastic\example\randinit\CMakeFiles\CMakeTmp\CMakeFiles\cmTC_d0a2d.dir\,-FS
+main.cu.obj
+kernel32.lib
+user32.lib
+gdi32.lib
+winspool.lib
+shell32.lib
+ole32.lib
+oleaut32.lib
+uuid.lib
+comdlg32.lib
+advapi32.lib
+Linking CUDA executable cmTC_d0a2d.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_d0a2d.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\cmTC_d0a2d.dir --rc=G:\buildtools\rua\bin\windres.exe --mt="" --manifests  -- G:\buildtools\rua\bin\ld.exe /nologo CMakeFiles/cmTC_d0a2d.dir/main.cu.obj CMakeFiles\cmTC_d0a2d.dir\cmake_device_link.obj  /out:cmTC_d0a2d.exe /implib:cmTC_d0a2d.lib /pdb:H:\elastic\example\randinit\CMakeFiles\CMakeTmp\cmTC_d0a2d.pdb /version:0.0   /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib  -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64" "cudadevrt.lib" "cudart_static.lib" 
+RC Pass 1: command "G:\buildtools\rua\bin\windres.exe /foCMakeFiles\cmTC_d0a2d.dir/manifest.res CMakeFiles\cmTC_d0a2d.dir/manifest.rc" failed (exit code 1) with the following output:
+G:\buildtools\rua\bin\windres.exe: '/foCMakeFiles\cmTC_d0a2d.dir/manifest.res': No such file
+G:\buildtools\rua\bin\windres.exe: can't open `/foCMakeFiles\cmTC_d0a2d.dir/manifest.res' for input
+CMakeFiles\cmTC_d0a2d.dir\build.make:104: recipe for target 'cmTC_d0a2d.exe' failed
+mingw32-make.exe[1]: *** [cmTC_d0a2d.exe] Error -1
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Makefile:120: recipe for target 'cmTC_d0a2d/fast' failed
+mingw32-make.exe: *** [cmTC_d0a2d/fast] Error 2
+
+

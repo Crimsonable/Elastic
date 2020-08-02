@@ -226,4 +226,11 @@ struct ExpTraits<BinaryExp<Op, Lhs, Rhs, Dtype, exp_type>> {
   static constexpr type::device dev = ExpTraits<Rhs>::dev;
   static constexpr bool exp = true;
 };
+
+template<typename T>
+struct ExpTraits<Scalar<T>> {
+  static constexpr type::device dev = type::device::None;
+  static constexpr bool exp = true;
+};
+
 }  // namespace Elastic

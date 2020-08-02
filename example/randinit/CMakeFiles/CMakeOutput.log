@@ -631,3 +631,1353 @@ make[1]: Leaving directory '/mnt/h/elastic/example/randinit/CMakeFiles/CMakeTmp'
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+The system is: Windows - 10.0.19041 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: G:/buildtools/rua/bin/gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+
+The C compiler identification is GNU, found in "H:/elastic/example/randinit/CMakeFiles/3.14.0-rc1/CompilerIdC/a.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: G:/buildtools/rua/bin/g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+
+The CXX compiler identification is GNU, found in "H:/elastic/example/randinit/CMakeFiles/3.14.0-rc1/CompilerIdCXX/a.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_eb1e5/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_eb1e5.dir\build.make CMakeFiles/cmTC_eb1e5.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb1e5.dir/testCCompiler.c.obj
+G:\buildtools\rua\bin\gcc.exe    -o CMakeFiles\cmTC_eb1e5.dir\testCCompiler.c.obj   -c H:\elastic\example\randinit\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_eb1e5.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_eb1e5.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_eb1e5.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_eb1e5.dir/objects.a @CMakeFiles\cmTC_eb1e5.dir\objects1.rsp
+G:\buildtools\rua\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_eb1e5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_eb1e5.exe -Wl,--out-implib,libcmTC_eb1e5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_eb1e5.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_547b5/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_547b5.dir\build.make CMakeFiles/cmTC_547b5.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_547b5.dir/CMakeCCompilerABI.c.obj
+G:\buildtools\rua\bin\gcc.exe   -v -o CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj   -c G:\buildtools\cmake-3.14.0-rc1-win64-x64\share\cmake-3.14\Modules\CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=G:\buildtools\rua\bin\gcc.exe
+Target: mingw32
+Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-5' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings
+Thread model: win32
+gcc version 8.2.0 (MinGW.org GCC-8.2.0-5) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+ g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/cc1.exe -quiet -v -iprefix g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/ G:\buildtools\cmake-3.14.0-rc1-win64-x64\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\54217\AppData\Local\Temp\ccTBTn7T.s
+GNU C17 (MinGW.org GCC-8.2.0-5) version 8.2.0 (mingw32)
+	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"
+ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include"
+ignoring nonexistent directory "/mingw/include"
+ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../include"
+ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include-fixed"
+ignoring nonexistent directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"
+ignoring nonexistent directory "/mingw/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include
+ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/../../../../include
+ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include-fixed
+End of search list.
+GNU C17 (MinGW.org GCC-8.2.0-5) version 8.2.0 (mingw32)
+	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 88d50f904797cac3fc341345a9dc4ec1
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+ g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj C:\Users\54217\AppData\Local\Temp\ccTBTn7T.s
+GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32
+COMPILER_PATH=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/;g:/buildtools/rua/bin/../libexec/gcc/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/
+LIBRARY_PATH=g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/;g:/buildtools/rua/bin/../lib/gcc/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586'
+Linking C executable cmTC_547b5.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_547b5.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_547b5.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_547b5.dir/objects.a @CMakeFiles\cmTC_547b5.dir\objects1.rsp
+G:\buildtools\rua\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_547b5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_547b5.exe -Wl,--out-implib,libcmTC_547b5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=G:\buildtools\rua\bin\gcc.exe
+COLLECT_LTO_WRAPPER=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-5' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings
+Thread model: win32
+gcc version 8.2.0 (MinGW.org GCC-8.2.0-5) 
+COMPILER_PATH=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/;g:/buildtools/rua/bin/../libexec/gcc/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/
+LIBRARY_PATH=g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/;g:/buildtools/rua/bin/../lib/gcc/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_547b5.exe' '-mtune=generic' '-march=i586'
+ g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe -plugin g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\54217\AppData\Local\Temp\cctKzKvb.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_547b5.exe g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0 -Lg:/buildtools/rua/bin/../lib/gcc -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_547b5.dir/objects.a --no-whole-archive --out-implib libcmTC_547b5.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_547b5.exe' '-mtune=generic' '-march=i586'
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include]
+    add: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../include]
+    add: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include-fixed]
+  end of search list found
+  implicit include dirs: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../include;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include-fixed]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_547b5/fast ]
+  ignore line: [G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_547b5.dir\build.make CMakeFiles/cmTC_547b5.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_547b5.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [G:\buildtools\rua\bin\gcc.exe   -v -o CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj   -c G:\buildtools\cmake-3.14.0-rc1-win64-x64\share\cmake-3.14\Modules\CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=G:\buildtools\rua\bin\gcc.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-5' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 8.2.0 (MinGW.org GCC-8.2.0-5) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [ g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/cc1.exe -quiet -v -iprefix g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/ G:\buildtools\cmake-3.14.0-rc1-win64-x64\share\cmake-3.14\Modules\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj -version -o C:\Users\54217\AppData\Local\Temp\ccTBTn7T.s]
+  ignore line: [GNU C17 (MinGW.org GCC-8.2.0-5) version 8.2.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"]
+  ignore line: [ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/mingw/include"]
+  ignore line: [ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../include"]
+  ignore line: [ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"]
+  ignore line: [ignoring nonexistent directory "/mingw/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include]
+  ignore line: [ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/../../../../include]
+  ignore line: [ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include-fixed]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (MinGW.org GCC-8.2.0-5) version 8.2.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 88d50f904797cac3fc341345a9dc4ec1]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [ g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj C:\Users\54217\AppData\Local\Temp\ccTBTn7T.s]
+  ignore line: [GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32]
+  ignore line: [COMPILER_PATH=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/]
+  ignore line: [g:/buildtools/rua/bin/../libexec/gcc/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_547b5.dir\CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=i586']
+  ignore line: [Linking C executable cmTC_547b5.exe]
+  ignore line: [G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_547b5.dir\link.txt --verbose=1]
+  ignore line: [G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_547b5.dir/objects.a]
+  ignore line: [G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_547b5.dir/objects.a @CMakeFiles\cmTC_547b5.dir\objects1.rsp]
+  ignore line: [G:\buildtools\rua\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_547b5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_547b5.exe -Wl,--out-implib,libcmTC_547b5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=G:\buildtools\rua\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-5' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 8.2.0 (MinGW.org GCC-8.2.0-5) ]
+  ignore line: [COMPILER_PATH=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/]
+  ignore line: [g:/buildtools/rua/bin/../libexec/gcc/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_547b5.exe' '-mtune=generic' '-march=i586']
+  link line: [ g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe -plugin g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\54217\AppData\Local\Temp\cctKzKvb.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_547b5.exe g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0 -Lg:/buildtools/rua/bin/../lib/gcc -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_547b5.dir/objects.a --no-whole-archive --out-implib libcmTC_547b5.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtend.o]
+    arg [g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\54217\AppData\Local\Temp\cctKzKvb.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_547b5.exe] ==> ignore
+    arg [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o] ==> ignore
+    arg [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o] ==> ignore
+    arg [-Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0] ==> dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0]
+    arg [-Lg:/buildtools/rua/bin/../lib/gcc] ==> dir [g:/buildtools/rua/bin/../lib/gcc]
+    arg [-Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib] ==> dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib]
+    arg [-Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../..] ==> dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTC_547b5.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTC_547b5.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtend.o] ==> ignore
+  remove lib [gcc_eh]
+  remove lib [msvcrt]
+  remove lib [gcc_eh]
+  remove lib [msvcrt]
+  collapse library dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0] ==> [G:/buildtools/rua/lib/gcc/mingw32/8.2.0]
+  collapse library dir [g:/buildtools/rua/bin/../lib/gcc] ==> [G:/buildtools/rua/lib/gcc]
+  collapse library dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib] ==> [G:/buildtools/rua/mingw32/lib]
+  collapse library dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../..] ==> [G:/buildtools/rua/lib]
+  implicit libs: [mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex]
+  implicit dirs: [G:/buildtools/rua/lib/gcc/mingw32/8.2.0;G:/buildtools/rua/lib/gcc;G:/buildtools/rua/mingw32/lib;G:/buildtools/rua/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_e310b/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_e310b.dir\build.make CMakeFiles/cmTC_e310b.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e310b.dir/feature_tests.c.obj
+G:\buildtools\rua\bin\gcc.exe   -std=c11 -o CMakeFiles\cmTC_e310b.dir\feature_tests.c.obj   -c H:\elastic\example\randinit\CMakeFiles\feature_tests.c
+Linking C executable cmTC_e310b.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_e310b.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_e310b.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_e310b.dir/objects.a @CMakeFiles\cmTC_e310b.dir\objects1.rsp
+G:\buildtools\rua\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_e310b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e310b.exe -Wl,--out-implib,libcmTC_e310b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e310b.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_7591f/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_7591f.dir\build.make CMakeFiles/cmTC_7591f.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7591f.dir/feature_tests.c.obj
+G:\buildtools\rua\bin\gcc.exe   -std=c99 -o CMakeFiles\cmTC_7591f.dir\feature_tests.c.obj   -c H:\elastic\example\randinit\CMakeFiles\feature_tests.c
+Linking C executable cmTC_7591f.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7591f.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7591f.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_7591f.dir/objects.a @CMakeFiles\cmTC_7591f.dir\objects1.rsp
+G:\buildtools\rua\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_7591f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7591f.exe -Wl,--out-implib,libcmTC_7591f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7591f.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_b923c/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_b923c.dir\build.make CMakeFiles/cmTC_b923c.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b923c.dir/feature_tests.c.obj
+G:\buildtools\rua\bin\gcc.exe   -std=c90 -o CMakeFiles\cmTC_b923c.dir\feature_tests.c.obj   -c H:\elastic\example\randinit\CMakeFiles\feature_tests.c
+Linking C executable cmTC_b923c.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_b923c.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_b923c.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_b923c.dir/objects.a @CMakeFiles\cmTC_b923c.dir\objects1.rsp
+G:\buildtools\rua\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_b923c.dir/objects.a -Wl,--no-whole-archive  -o cmTC_b923c.exe -Wl,--out-implib,libcmTC_b923c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_b923c.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_73b0f/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_73b0f.dir\build.make CMakeFiles/cmTC_73b0f.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_73b0f.dir/testCXXCompiler.cxx.obj
+G:\buildtools\rua\bin\g++.exe     -o CMakeFiles\cmTC_73b0f.dir\testCXXCompiler.cxx.obj -c H:\elastic\example\randinit\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_73b0f.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_73b0f.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_73b0f.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_73b0f.dir/objects.a @CMakeFiles\cmTC_73b0f.dir\objects1.rsp
+G:\buildtools\rua\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_73b0f.dir/objects.a -Wl,--no-whole-archive  -o cmTC_73b0f.exe -Wl,--out-implib,libcmTC_73b0f.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_73b0f.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_21ab2/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_21ab2.dir\build.make CMakeFiles/cmTC_21ab2.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21ab2.dir/CMakeCXXCompilerABI.cpp.obj
+G:\buildtools\rua\bin\g++.exe    -v -o CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj -c G:\buildtools\cmake-3.14.0-rc1-win64-x64\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=G:\buildtools\rua\bin\g++.exe
+Target: mingw32
+Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-5' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings
+Thread model: win32
+gcc version 8.2.0 (MinGW.org GCC-8.2.0-5) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/cc1plus.exe -quiet -v -iprefix g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/ G:\buildtools\cmake-3.14.0-rc1-win64-x64\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\54217\AppData\Local\Temp\ccZioiSt.s
+GNU C++14 (MinGW.org GCC-8.2.0-5) version 8.2.0 (mingw32)
+	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"
+ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include/c++"
+ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include/c++/mingw32"
+ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include/c++/backward"
+ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include"
+ignoring nonexistent directory "/mingw/include"
+ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../include"
+ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include-fixed"
+ignoring nonexistent directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"
+ignoring nonexistent directory "/mingw/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include/c++
+ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32
+ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward
+ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include
+ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/../../../../include
+ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include-fixed
+End of search list.
+GNU C++14 (MinGW.org GCC-8.2.0-5) version 8.2.0 (mingw32)
+	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 1aab1d81d4f13e2c95d138c5bfb5463a
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\54217\AppData\Local\Temp\ccZioiSt.s
+GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32
+COMPILER_PATH=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/;g:/buildtools/rua/bin/../libexec/gcc/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/
+LIBRARY_PATH=g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/;g:/buildtools/rua/bin/../lib/gcc/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586'
+Linking CXX executable cmTC_21ab2.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_21ab2.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_21ab2.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_21ab2.dir/objects.a @CMakeFiles\cmTC_21ab2.dir\objects1.rsp
+G:\buildtools\rua\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_21ab2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_21ab2.exe -Wl,--out-implib,libcmTC_21ab2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Using built-in specs.
+COLLECT_GCC=G:\buildtools\rua\bin\g++.exe
+COLLECT_LTO_WRAPPER=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe
+Target: mingw32
+Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-5' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings
+Thread model: win32
+gcc version 8.2.0 (MinGW.org GCC-8.2.0-5) 
+COMPILER_PATH=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/;g:/buildtools/rua/bin/../libexec/gcc/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/
+LIBRARY_PATH=g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/;g:/buildtools/rua/bin/../lib/gcc/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_21ab2.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+ g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe -plugin g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\54217\AppData\Local\Temp\ccHBivnP.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_21ab2.exe g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0 -Lg:/buildtools/rua/bin/../lib/gcc -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_21ab2.dir/objects.a --no-whole-archive --out-implib libcmTC_21ab2.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_21ab2.exe' '-shared-libgcc' '-mtune=generic' '-march=i586'
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include/c++]
+    add: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include/c++/mingw32]
+    add: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include/c++/backward]
+    add: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include]
+    add: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../include]
+    add: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include-fixed]
+  end of search list found
+  implicit include dirs: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include/c++;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include/c++/mingw32;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include/c++/backward;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../include;g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/include-fixed]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_21ab2/fast ]
+  ignore line: [G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_21ab2.dir\build.make CMakeFiles/cmTC_21ab2.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_21ab2.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [G:\buildtools\rua\bin\g++.exe    -v -o CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj -c G:\buildtools\cmake-3.14.0-rc1-win64-x64\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=G:\buildtools\rua\bin\g++.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-5' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 8.2.0 (MinGW.org GCC-8.2.0-5) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  ignore line: [ g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/cc1plus.exe -quiet -v -iprefix g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/ G:\buildtools\cmake-3.14.0-rc1-win64-x64\share\cmake-3.14\Modules\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=i586 -auxbase-strip CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj -version -o C:\Users\54217\AppData\Local\Temp\ccZioiSt.s]
+  ignore line: [GNU C++14 (MinGW.org GCC-8.2.0-5) version 8.2.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"]
+  ignore line: [ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include/c++"]
+  ignore line: [ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include/c++/mingw32"]
+  ignore line: [ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include/c++/backward"]
+  ignore line: [ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/mingw/include"]
+  ignore line: [ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../include"]
+  ignore line: [ignoring duplicate directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "g:/buildtools/rua/lib/gcc/../../lib/gcc/mingw32/8.2.0/../../../../mingw32/include"]
+  ignore line: [ignoring nonexistent directory "/mingw/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include/c++]
+  ignore line: [ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32]
+  ignore line: [ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward]
+  ignore line: [ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include]
+  ignore line: [ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/../../../../include]
+  ignore line: [ g:\buildtools\rua\bin\../lib/gcc/mingw32/8.2.0/include-fixed]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (MinGW.org GCC-8.2.0-5) version 8.2.0 (mingw32)]
+  ignore line: [	compiled by GNU C version 8.2.0, GMP version 6.1.2, MPFR version 3.1.5, MPC version 1.0.3, isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 1aab1d81d4f13e2c95d138c5bfb5463a]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  ignore line: [ g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/as.exe -v -o CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj C:\Users\54217\AppData\Local\Temp\ccZioiSt.s]
+  ignore line: [GNU assembler version 2.32 (mingw32) using BFD version (GNU Binutils) 2.32]
+  ignore line: [COMPILER_PATH=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/]
+  ignore line: [g:/buildtools/rua/bin/../libexec/gcc/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\cmTC_21ab2.dir\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  ignore line: [Linking CXX executable cmTC_21ab2.exe]
+  ignore line: [G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_21ab2.dir\link.txt --verbose=1]
+  ignore line: [G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_21ab2.dir/objects.a]
+  ignore line: [G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_21ab2.dir/objects.a @CMakeFiles\cmTC_21ab2.dir\objects1.rsp]
+  ignore line: [G:\buildtools\rua\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_21ab2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_21ab2.exe -Wl,--out-implib,libcmTC_21ab2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=G:\buildtools\rua\bin\g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../src/gcc-8.2.0/configure --build=x86_64-pc-linux-gnu --host=mingw32 --target=mingw32 --prefix=/mingw --disable-win32-registry --with-arch=i586 --with-tune=generic --enable-languages=c,c++,objc,obj-c++,fortran,ada --with-pkgversion='MinGW.org GCC-8.2.0-5' --with-gmp=/mingw --with-mpfr=/mingw --with-mpc=/mingw --enable-static --enable-shared --enable-threads --with-dwarf2 --disable-sjlj-exceptions --enable-version-specific-runtime-libs --with-libiconv-prefix=/mingw --with-libintl-prefix=/mingw --enable-libstdcxx-debug --with-isl=/mingw --enable-libgomp --disable-libvtv --enable-nls --disable-build-format-warnings]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 8.2.0 (MinGW.org GCC-8.2.0-5) ]
+  ignore line: [COMPILER_PATH=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/]
+  ignore line: [g:/buildtools/rua/bin/../libexec/gcc/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib/]
+  ignore line: [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_21ab2.exe' '-shared-libgcc' '-mtune=generic' '-march=i586']
+  link line: [ g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe -plugin g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll -plugin-opt=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\54217\AppData\Local\Temp\ccHBivnP.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_21ab2.exe g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0 -Lg:/buildtools/rua/bin/../lib/gcc -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib -Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../.. --whole-archive CMakeFiles\cmTC_21ab2.dir/objects.a --no-whole-archive --out-implib libcmTC_21ab2.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtend.o]
+    arg [g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/collect2.exe] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/liblto_plugin-0.dll] ==> ignore
+    arg [-plugin-opt=g:/buildtools/rua/bin/../libexec/gcc/mingw32/8.2.0/lto-wrapper.exe] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\54217\AppData\Local\Temp\ccHBivnP.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-plugin-opt=-pass-through=-ladvapi32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lshell32] ==> ignore
+    arg [-plugin-opt=-pass-through=-luser32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lkernel32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmoldname] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmingwex] ==> ignore
+    arg [-plugin-opt=-pass-through=-lmsvcrt] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-u] ==> ignore
+    arg [___register_frame_info] ==> ignore
+    arg [-u] ==> ignore
+    arg [___deregister_frame_info] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_21ab2.exe] ==> ignore
+    arg [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../crt2.o] ==> ignore
+    arg [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtbegin.o] ==> ignore
+    arg [-Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0] ==> dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0]
+    arg [-Lg:/buildtools/rua/bin/../lib/gcc] ==> dir [g:/buildtools/rua/bin/../lib/gcc]
+    arg [-Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib] ==> dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib]
+    arg [-Lg:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../..] ==> dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTC_21ab2.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTC_21ab2.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/crtend.o] ==> ignore
+  remove lib [msvcrt]
+  remove lib [msvcrt]
+  collapse library dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0] ==> [G:/buildtools/rua/lib/gcc/mingw32/8.2.0]
+  collapse library dir [g:/buildtools/rua/bin/../lib/gcc] ==> [G:/buildtools/rua/lib/gcc]
+  collapse library dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../../../mingw32/lib] ==> [G:/buildtools/rua/mingw32/lib]
+  collapse library dir [g:/buildtools/rua/bin/../lib/gcc/mingw32/8.2.0/../../..] ==> [G:/buildtools/rua/lib]
+  implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex]
+  implicit dirs: [G:/buildtools/rua/lib/gcc/mingw32/8.2.0;G:/buildtools/rua/lib/gcc;G:/buildtools/rua/mingw32/lib;G:/buildtools/rua/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++2a] compiler features compiled with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_7b268/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_7b268.dir\build.make CMakeFiles/cmTC_7b268.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7b268.dir/feature_tests.cxx.obj
+G:\buildtools\rua\bin\g++.exe    -std=c++2a -o CMakeFiles\cmTC_7b268.dir\feature_tests.cxx.obj -c H:\elastic\example\randinit\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_7b268.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7b268.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7b268.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_7b268.dir/objects.a @CMakeFiles\cmTC_7b268.dir\objects1.rsp
+G:\buildtools\rua\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_7b268.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7b268.exe -Wl,--out-implib,libcmTC_7b268.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_7b268.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++17] compiler features compiled with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_df96e/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_df96e.dir\build.make CMakeFiles/cmTC_df96e.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_df96e.dir/feature_tests.cxx.obj
+G:\buildtools\rua\bin\g++.exe    -std=c++17 -o CMakeFiles\cmTC_df96e.dir\feature_tests.cxx.obj -c H:\elastic\example\randinit\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_df96e.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_df96e.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_df96e.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_df96e.dir/objects.a @CMakeFiles\cmTC_df96e.dir\objects1.rsp
+G:\buildtools\rua\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_df96e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_df96e.exe -Wl,--out-implib,libcmTC_df96e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_df96e.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_19786/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_19786.dir\build.make CMakeFiles/cmTC_19786.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_19786.dir/feature_tests.cxx.obj
+G:\buildtools\rua\bin\g++.exe    -std=c++14 -o CMakeFiles\cmTC_19786.dir\feature_tests.cxx.obj -c H:\elastic\example\randinit\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_19786.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_19786.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_19786.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_19786.dir/objects.a @CMakeFiles\cmTC_19786.dir\objects1.rsp
+G:\buildtools\rua\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_19786.dir/objects.a -Wl,--no-whole-archive  -o cmTC_19786.exe -Wl,--out-implib,libcmTC_19786.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_19786.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_391d8/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_391d8.dir\build.make CMakeFiles/cmTC_391d8.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_391d8.dir/feature_tests.cxx.obj
+G:\buildtools\rua\bin\g++.exe    -std=c++11 -o CMakeFiles\cmTC_391d8.dir\feature_tests.cxx.obj -c H:\elastic\example\randinit\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_391d8.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_391d8.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_391d8.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_391d8.dir/objects.a @CMakeFiles\cmTC_391d8.dir\objects1.rsp
+G:\buildtools\rua\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_391d8.dir/objects.a -Wl,--no-whole-archive  -o cmTC_391d8.exe -Wl,--out-implib,libcmTC_391d8.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_391d8.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: H:/elastic/example/randinit/CMakeFiles/CMakeTmp
+
+Run Build Command(s):G:/buildtools/rua/bin/mingw32-make.exe cmTC_69f02/fast 
+G:/buildtools/rua/bin/mingw32-make.exe -f CMakeFiles\cmTC_69f02.dir\build.make CMakeFiles/cmTC_69f02.dir/build
+mingw32-make.exe[1]: Entering directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_69f02.dir/feature_tests.cxx.obj
+G:\buildtools\rua\bin\g++.exe    -std=c++98 -o CMakeFiles\cmTC_69f02.dir\feature_tests.cxx.obj -c H:\elastic\example\randinit\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_69f02.exe
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_69f02.dir\link.txt --verbose=1
+G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin\cmake.exe -E remove -f CMakeFiles\cmTC_69f02.dir/objects.a
+G:\buildtools\rua\bin\ar.exe cr CMakeFiles\cmTC_69f02.dir/objects.a @CMakeFiles\cmTC_69f02.dir\objects1.rsp
+G:\buildtools\rua\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_69f02.dir/objects.a -Wl,--no-whole-archive  -o cmTC_69f02.exe -Wl,--out-implib,libcmTC_69f02.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_69f02.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'H:/elastic/example/randinit/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+Compiler: C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/nvcc.exe 
+Build flags: 
+Id flags:  -v;--keep;--keep-dir;tmp
+
+The output was:
+0
+
+H:\elastic\example\randinit\CMakeFiles\3.14.0-rc1\CompilerIdCUDA>call "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../../VC/Auxiliary/Build/vcvars64.bat" 
+**********************************************************************
+** Visual Studio 2017 Developer Command Prompt v15.9.25
+** Copyright (c) 2017 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+#$ C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../../VC/Auxiliary/Build/vcvars64.bat
+#$ ADSK_CLM_WPAD_PROXY_CHECK=FALSE
+#$ ADVISOR_2020_DIR=H:\intelXE\Advisor 2020\
+#$ ALLUSERSPROFILE=C:\ProgramData
+#$ APPDATA=C:\Users\54217\AppData\Roaming
+#$ cmder_path=G:\tools\cmder
+#$ CommandPromptType=Native
+#$ CommonProgramFiles=C:\Program Files\Common Files
+#$ CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+#$ CommonProgramW6432=C:\Program Files\Common Files
+#$ COMPUTERNAME=LAPTOP-709QUJ61
+#$ ComSpec=C:\WINDOWS\system32\cmd.exe
+#$ CONDA_DEFAULT_ENV=base
+#$ CONDA_EXE=G:\anaconda\Scripts\conda.exe
+#$ CONDA_PREFIX=G:\anaconda
+#$ CONDA_PROMPT_MODIFIER=(base) 
+#$ CONDA_PYTHON_EXE=G:\anaconda\python.exe
+#$ CONDA_SHLVL=1
+#$ CUDA_PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2
+#$ CUDA_PATH_V10_2=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2
+#$ DevEnvDir=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\
+#$ DriverData=C:\Windows\System32\Drivers\DriverData
+#$ ExtensionSdkDir=C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs
+#$ Framework40Version=v4.0
+#$ FrameworkDir=C:\Windows\Microsoft.NET\Framework64\
+#$ FrameworkDir64=C:\Windows\Microsoft.NET\Framework64\
+#$ FrameworkVersion=v4.0.30319
+#$ FrameworkVersion64=v4.0.30319
+#$ HOME=C:\Users\54217
+#$ HOMEDRIVE=C:
+#$ HOMEPATH=\Users\54217
+#$ INCLUDE=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt
+#$ I_MPI_ROOT=H:\intelXE\compilers_and_libraries_2020.0.166\windows\mpi
+#$ ICPP_COMPILER20=H:\intelXE\compilers_and_libraries_2020.0.166\windows\
+#$ IFORT_COMPILER20=H:\intelXE\compilers_and_libraries_2020.0.166\windows\
+#$ INSPECTOR_2020_DIR=H:\intelXE\Inspector 2020\
+#$ INTEL_DEV_REDIST=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+#$ INTEL_LICENSE_FILE=C:\Program Files (x86)\Common Files\\Intel\Licenses;C:\Program Files (x86)\Common Files\Intel\Licenses
+#$ LIB=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.17763.0\um\x64;
+#$ LIBPATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\lib\x86\store\references;C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.17763.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.17763.0;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;
+#$ LM_LICENSE_FILE=27011@LAPTOP-709QUJ61
+#$ LOCALAPPDATA=C:\Users\54217\AppData\Local
+#$ LOGONSERVER=\\LAPTOP-709QUJ61
+#$ MIC_LD_LIBRARY_PATH=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
+#$ MSMPI_BIN=C:\Program Files\Microsoft MPI\Bin\
+#$ NUMBER_OF_PROCESSORS=12
+#$ NVCUDASAMPLES10_2_ROOT=C:\ProgramData\NVIDIA Corporation\CUDA Samples\v10.2
+#$ NVCUDASAMPLES_ROOT=C:\ProgramData\NVIDIA Corporation\CUDA Samples\v10.2
+#$ NVTOOLSEXT_PATH=C:\Program Files\NVIDIA Corporation\NvToolsExt\
+#$ OneDrive=C:\Users\54217\OneDrive
+#$ OneDriveConsumer=C:\Users\54217\OneDrive
+#$ OnlineServices=Online Services
+#$ OS=Windows_NT
+#$ Path=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX64\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCPackages;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\Roslyn;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\\x64;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\;C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64;C:\Program Files (x86)\Windows Kits\10\bin\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\\MSBuild\15.0\bin;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\;G:\anaconda;G:\anaconda\Library\mingw-w64\bin;G:\anaconda\Library\usr\bin;G:\anaconda\Library\bin;G:\anaconda\Scripts;G:\anaconda\bin;G:\anaconda\condabin;G:\vulkan\Bin;H:\intelXE\compilers_and_libraries_2020.0.166\windows\mpi\intel64\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;G:\abaqus_main\bin;C:\Program Files\Microsoft MPI\Bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;G:\matlab 2018a\runtime\win64;G:\matlab 2018a\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;G:\Git\cmd;H:\Vue\node_global\node_modules;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin;G:\tools\cmder;G:\anaconda\Scripts;G:\buildtools\rua\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.5.0;G:\abaqus\main\Commands;G:\tools\latex\texlive\2019\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;H:\intelXE\compilers_and_libraries_2020.0.166\windows\bin\intel64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Users\54217\AppData\Local\Microsoft\WindowsApps;H:\Vue\node_global;G:\tools\Bandizip;G:\tools\latex\texlive\2019\bin\win32;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja
+#$ PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+#$ Platform=x64
+#$ platformcode=KV
+#$ PROCESSOR_ARCHITECTURE=AMD64
+#$ PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+#$ PROCESSOR_LEVEL=6
+#$ PROCESSOR_REVISION=9e0a
+#$ ProgramData=C:\ProgramData
+#$ ProgramFiles=C:\Program Files
+#$ ProgramFiles(x86)=C:\Program Files (x86)
+#$ ProgramW6432=C:\Program Files
+#$ PROMPT=$P$G
+#$ PSModulePath=C:\Users\54217\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+#$ PUBLIC=C:\Users\Public
+#$ RegionCode=APJ
+#$ SystemDrive=C:
+#$ SystemRoot=C:\WINDOWS
+#$ UCRTVersion=10.0.17763.0
+#$ UniversalCRTSdkDir=C:\Program Files (x86)\Windows Kits\10\
+#$ USERDOMAIN=LAPTOP-709QUJ61
+#$ USERDOMAIN_ROAMINGPROFILE=LAPTOP-709QUJ61
+#$ USERNAME=54217
+#$ USERPROFILE=C:\Users\54217
+#$ VCIDEInstallDir=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\
+#$ VCINSTALLDIR=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\
+#$ VCToolsInstallDir=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\
+#$ VCToolsRedistDir=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\14.16.27012\
+#$ VCToolsVersion=14.16.27023
+#$ VisualStudioVersion=15.0
+#$ VK_SDK_PATH=G:\vulkan
+#$ VS110COMNTOOLS=G:\vs2010\Common7\Tools\
+#$ VS140COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+#$ VS150COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\
+#$ VS2017INSTALLDIR=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community
+#$ VSCMD_ARG_app_plat=Desktop
+#$ VSCMD_ARG_HOST_ARCH=x64
+#$ VSCMD_ARG_TGT_ARCH=x64
+#$ VSCMD_VER=15.9.25
+#$ vsconsoleoutput=1
+#$ VSINSTALLDIR=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\
+#$ VTUNE_PROFILER_2020_DIR=H:\intelXE\VTune Profiler 2020\
+#$ VULKAN_SDK=G:\vulkan
+#$ windir=C:\WINDOWS
+#$ WindowsLibPath=C:\Program Files (x86)\Windows Kits\10\UnionMetadata\10.0.17763.0;C:\Program Files (x86)\Windows Kits\10\References\10.0.17763.0
+#$ WindowsSdkBinPath=C:\Program Files (x86)\Windows Kits\10\bin\
+#$ WindowsSdkDir=C:\Program Files (x86)\Windows Kits\10\
+#$ WindowsSDKLibVersion=10.0.17763.0\
+#$ WindowsSdkVerBinPath=C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\
+#$ WindowsSDKVersion=10.0.17763.0\
+#$ WSLENV=WT_SESSION::WT_PROFILE_ID
+#$ WT_PROFILE_ID={61c54bbd-c2c6-5271-96e7-009a87ff44bf}
+#$ WT_SESSION=704a89a6-31ce-4c7f-a925-65313c2e3928
+#$ _CONDA_EXE=G:\anaconda\Scripts\conda.exe
+#$ _CONDA_ROOT=G:\anaconda
+#$ __DOTNET_ADD_64BIT=1
+#$ __DOTNET_PREFERRED_BITNESS=64
+#$ __VSCMD_PREINIT_PATH=G:\anaconda;G:\anaconda\Library\mingw-w64\bin;G:\anaconda\Library\usr\bin;G:\anaconda\Library\bin;G:\anaconda\Scripts;G:\anaconda\bin;G:\anaconda\condabin;G:\vulkan\Bin;H:\intelXE\compilers_and_libraries_2020.0.166\windows\mpi\intel64\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;G:\abaqus_main\bin;C:\Program Files\Microsoft MPI\Bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;G:\matlab 2018a\runtime\win64;G:\matlab 2018a\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;G:\Git\cmd;H:\Vue\node_global\node_modules;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin;G:\tools\cmder;G:\anaconda\Scripts;G:\buildtools\rua\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.5.0;G:\abaqus\main\Commands;G:\tools\latex\texlive\2019\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;H:\intelXE\compilers_and_libraries_2020.0.166\windows\bin\intel64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Users\54217\AppData\Local\Microsoft\WindowsApps;H:\Vue\node_global;G:\tools\Bandizip;G:\tools\latex\texlive\2019\bin\win32
+#$ PATH=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX64\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCPackages;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\Roslyn;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\\x64;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\;C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64;C:\Program Files (x86)\Windows Kits\10\bin\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\\MSBuild\15.0\bin;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\;G:\anaconda;G:\anaconda\Library\mingw-w64\bin;G:\anaconda\Library\usr\bin;G:\anaconda\Library\bin;G:\anaconda\Scripts;G:\anaconda\bin;G:\anaconda\condabin;G:\vulkan\Bin;H:\intelXE\compilers_and_libraries_2020.0.166\windows\mpi\intel64\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;G:\abaqus_main\bin;C:\Program Files\Microsoft MPI\Bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;G:\matlab 2018a\runtime\win64;G:\matlab 2018a\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;G:\Git\cmd;H:\Vue\node_global\node_modules;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin;G:\tools\cmder;G:\anaconda\Scripts;G:\buildtools\rua\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.5.0;G:\abaqus\main\Commands;G:\tools\latex\texlive\2019\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;H:\intelXE\compilers_and_libraries_2020.0.166\windows\bin\intel64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Users\54217\AppData\Local\Microsoft\WindowsApps;H:\Vue\node_global;G:\tools\Bandizip;G:\tools\latex\texlive\2019\bin\win32;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja
+#$ _NVVM_BRANCH_=nvvm
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin
+#$ _THERE_=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_SIZE_=64
+#$ _WIN_PLATFORM_=x64
+#$ TOP=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/..
+#$ NVVMIR_LIBRARY_DIR=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../nvvm/libdevice
+#$ PATH=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../nvvm/bin;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX64\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCPackages;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\Roslyn;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\\x64;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\;C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64;C:\Program Files (x86)\Windows Kits\10\bin\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\\MSBuild\15.0\bin;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\;G:\anaconda;G:\anaconda\Library\mingw-w64\bin;G:\anaconda\Library\usr\bin;G:\anaconda\Library\bin;G:\anaconda\Scripts;G:\anaconda\bin;G:\anaconda\condabin;G:\vulkan\Bin;H:\intelXE\compilers_and_libraries_2020.0.166\windows\mpi\intel64\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;G:\abaqus_main\bin;C:\Program Files\Microsoft MPI\Bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;G:\matlab 2018a\runtime\win64;G:\matlab 2018a\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;G:\Git\cmd;H:\Vue\node_global\node_modules;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin;G:\tools\cmder;G:\anaconda\Scripts;G:\buildtools\rua\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.5.0;G:\abaqus\main\Commands;G:\tools\latex\texlive\2019\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;H:\intelXE\compilers_and_libraries_2020.0.166\windows\bin\intel64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Users\54217\AppData\Local\Microsoft\WindowsApps;H:\Vue\node_global;G:\tools\Bandizip;G:\tools\latex\texlive\2019\bin\win32;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja
+#$ INCLUDES="-IC:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../include"  
+#$ LIBRARIES=  "/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64"
+#$ CUDAFE_FLAGS=
+#$ PTXAS_FLAGS=
+#$ erase tmp/a_dlink.reg.c
+CMakeCUDACompilerId.cu
+#$ cl.exe @"tmp/CMakeCUDACompilerId.cpp1.ii.res" > "tmp/CMakeCUDACompilerId.cpp1.ii" 
+CMakeCUDACompilerId.cu
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h: warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h(925): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+#$ cicc --microsoft_version=1916 --msvc_target_version=1916 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../.." --sdk_dir "C:/Program Files (x86)/Windows Kits/10/" --allow_managed  -arch compute_30 -m64 -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused -nvvmir-library "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../nvvm/libdevice/libdevice.10.bc" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --orig_src_file_name "CMakeCUDACompilerId.cu" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+#$ ptxas -arch=sm_30 -m64 "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_30.cubin" 
+#$ fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=30,file=tmp/CMakeCUDACompilerId.sm_30.cubin" "--image3=kind=ptx,sm=30,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" 
+#$ cl.exe @"tmp/CMakeCUDACompilerId.cpp4.ii.res" > "tmp/CMakeCUDACompilerId.cpp4.ii" 
+CMakeCUDACompilerId.cu
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h: warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h(925): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+#$ cudafe++ --microsoft_version=1916 --msvc_target_version=1916 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../.." --sdk_dir "C:/Program Files (x86)/Windows Kits/10/" --allow_managed --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" 
+#$ cl.exe @"tmp/CMakeCUDACompilerId.obj.res" -Fo"tmp/CMakeCUDACompilerId.obj" 
+CMakeCUDACompilerId.cudafe1.cpp
+#$ nvlink --arch=sm_30 --register-link-binaries="tmp/a_dlink.reg.c"  -m64   "/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.obj"  -o "tmp/a_dlink.sm_30.cubin"
+#$ fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=30,file=tmp/a_dlink.sm_30.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" 
+#$ cl.exe @"tmp/a_dlink.obj.res" -Fo"tmp/a_dlink.obj" 
+link.stub
+#$ cl.exe @"tmp/a.exe.res" -Fe"a.exe" 
+  
+
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.exe"
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.exp"
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.lib"
+
+The CUDA compiler identification is NVIDIA, found in "H:/elastic/example/randinit/CMakeFiles/3.14.0-rc1/CompilerIdCUDA/a.exe"
+
+Parsed CUDA nvcc implicit link information from above output:
+  found 'PATH=' string: [C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX64\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCPackages;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\Roslyn;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\\x64;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\;C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64;C:\Program Files (x86)\Windows Kits\10\bin\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\\MSBuild\15.0\bin;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\;G:\anaconda;G:\anaconda\Library\mingw-w64\bin;G:\anaconda\Library\usr\bin;G:\anaconda\Library\bin;G:\anaconda\Scripts;G:\anaconda\bin;G:\anaconda\condabin;G:\vulkan\Bin;H:\intelXE\compilers_and_libraries_2020.0.166\windows\mpi\intel64\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;G:\abaqus_main\bin;C:\Program Files\Microsoft MPI\Bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;G:\matlab 2018a\runtime\win64;G:\matlab 2018a\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;G:\Git\cmd;H:\Vue\node_global\node_modules;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin;G:\tools\cmder;G:\anaconda\Scripts;G:\buildtools\rua\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.5.0;G:\abaqus\main\Commands;G:\tools\latex\texlive\2019\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;H:\intelXE\compilers_and_libraries_2020.0.166\windows\bin\intel64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Users\54217\AppData\Local\Microsoft\WindowsApps;H:\Vue\node_global;G:\tools\Bandizip;G:\tools\latex\texlive\2019\bin\win32;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja]
+  found 'LIBRARIES=' string: ["/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64"]
+  considering line: []
+  considering line: [H:\elastic\example\randinit\CMakeFiles\3.14.0-rc1\CompilerIdCUDA>call "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../../VC/Auxiliary/Build/vcvars64.bat" ]
+  considering line: [**********************************************************************]
+  considering line: [** Visual Studio 2017 Developer Command Prompt v15.9.25]
+  considering line: [** Copyright (c) 2017 Microsoft Corporation]
+  considering line: [**********************************************************************]
+  considering line: [[vcvarsall.bat] Environment initialized for: 'x64']
+  considering line: [C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../../VC/Auxiliary/Build/vcvars64.bat]
+  considering line: [erase tmp/a_dlink.reg.c]
+  considering line: [CMakeCUDACompilerId.cu]
+  considering line: [cl.exe @"tmp/CMakeCUDACompilerId.cpp1.ii.res" > "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+  considering line: [CMakeCUDACompilerId.cu]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h: warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h(925): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [cicc --microsoft_version=1916 --msvc_target_version=1916 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../.." --sdk_dir "C:/Program Files (x86)/Windows Kits/10/" --allow_managed  -arch compute_30 -m64 -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused -nvvmir-library "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../nvvm/libdevice/libdevice.10.bc" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --orig_src_file_name "CMakeCUDACompilerId.cu" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+  considering line: [ptxas -arch=sm_30 -m64 "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_30.cubin" ]
+  considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=30,file=tmp/CMakeCUDACompilerId.sm_30.cubin" "--image3=kind=ptx,sm=30,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+  considering line: [cl.exe @"tmp/CMakeCUDACompilerId.cpp4.ii.res" > "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [CMakeCUDACompilerId.cu]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h: warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h(925): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [cudafe++ --microsoft_version=1916 --msvc_target_version=1916 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../.." --sdk_dir "C:/Program Files (x86)/Windows Kits/10/" --allow_managed --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [cl.exe @"tmp/CMakeCUDACompilerId.obj.res" -Fo"tmp/CMakeCUDACompilerId.obj" ]
+  considering line: [CMakeCUDACompilerId.cudafe1.cpp]
+  considering line: [nvlink --arch=sm_30 --register-link-binaries="tmp/a_dlink.reg.c"  -m64   "/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.obj"  -o "tmp/a_dlink.sm_30.cubin"]
+    ignoring nvlink line
+  considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=30,file=tmp/a_dlink.sm_30.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+  considering line: [cl.exe @"tmp/a_dlink.obj.res" -Fo"tmp/a_dlink.obj" ]
+  considering line: [link.stub]
+  considering line: [cl.exe @"tmp/a.exe.res" -Fe"a.exe" ]
+    extracted link line: [cl.exe -nologo "tmp/a_dlink.obj" "tmp/CMakeCUDACompilerId.obj" -link -INCREMENTAL:NO   "/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64"  cudadevrt.lib  cudart_static.lib -Fe"a.exe" ]
+  considering line: [  ]
+  considering line: []
+
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line: [cuda-fake-ld cl.exe -nologo "tmp/a_dlink.obj" "tmp/CMakeCUDACompilerId.obj" -link -INCREMENTAL:NO   "/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64"  cudadevrt.lib  cudart_static.lib -Fe"a.exe" ]
+    arg [cuda-fake-ld] ==> ignore
+    arg [cl.exe] ==> recognize MSVC cl
+    arg [-nologo] ==> ignore
+    arg [tmp/a_dlink.obj] ==> ignore
+    arg [tmp/CMakeCUDACompilerId.obj] ==> ignore
+    arg [-link] ==> ignore MSVC cl option
+    arg [-INCREMENTAL:NO] ==> ignore
+    arg [/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64] ==> dir [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64]
+    arg [cudadevrt.lib] ==> lib [cudadevrt.lib]
+    arg [cudart_static.lib] ==> lib [cudart_static.lib]
+    arg [-Fea.exe] ==> ignore
+  collapse library dir [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64] ==> [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64]
+  implicit libs: [cudadevrt.lib;cudart_static.lib]
+  implicit dirs: [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64]
+  implicit fwks: []
+
+
+Parsed CUDA nvcc include information from above output:
+  found 'PATH=' string: [C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX64\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCPackages;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\bin\Roslyn;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Team Tools\Performance Tools;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\\x64;C:\Program Files (x86)\Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\;C:\Program Files (x86)\Windows Kits\10\bin\10.0.17763.0\x64;C:\Program Files (x86)\Windows Kits\10\bin\x64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\\MSBuild\15.0\bin;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\;G:\anaconda;G:\anaconda\Library\mingw-w64\bin;G:\anaconda\Library\usr\bin;G:\anaconda\Library\bin;G:\anaconda\Scripts;G:\anaconda\bin;G:\anaconda\condabin;G:\vulkan\Bin;H:\intelXE\compilers_and_libraries_2020.0.166\windows\mpi\intel64\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;G:\abaqus_main\bin;C:\Program Files\Microsoft MPI\Bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\libnvvp;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;G:\matlab 2018a\runtime\win64;G:\matlab 2018a\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin;C:\Program Files\Intel\WiFi\bin;C:\Program Files\Common Files\Intel\WirelessCommon;G:\Git\cmd;H:\Vue\node_global\node_modules;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;G:\buildtools\cmake-3.14.0-rc1-win64-x64\bin;G:\tools\cmder;G:\anaconda\Scripts;G:\buildtools\rua\bin;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.5.0;G:\abaqus\main\Commands;G:\tools\latex\texlive\2019\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;H:\intelXE\compilers_and_libraries_2020.0.166\windows\bin\intel64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x64;C:\Users\54217\AppData\Local\Microsoft\WindowsApps;H:\Vue\node_global;G:\tools\Bandizip;G:\tools\latex\texlive\2019\bin\win32;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\Ninja]
+  found 'LIBRARIES=' string: ["/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64"]
+  considering line: []
+  considering line: [H:\elastic\example\randinit\CMakeFiles\3.14.0-rc1\CompilerIdCUDA>call "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../../VC/Auxiliary/Build/vcvars64.bat" ]
+  considering line: [**********************************************************************]
+  considering line: [** Visual Studio 2017 Developer Command Prompt v15.9.25]
+  considering line: [** Copyright (c) 2017 Microsoft Corporation]
+  considering line: [**********************************************************************]
+  considering line: [[vcvarsall.bat] Environment initialized for: 'x64']
+  considering line: [C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../../VC/Auxiliary/Build/vcvars64.bat]
+  considering line: [erase tmp/a_dlink.reg.c]
+  considering line: [CMakeCUDACompilerId.cu]
+  considering line: [cl.exe @"tmp/CMakeCUDACompilerId.cpp1.ii.res" > "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+  considering line: [CMakeCUDACompilerId.cu]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h: warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h(925): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [cicc --microsoft_version=1916 --msvc_target_version=1916 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../.." --sdk_dir "C:/Program Files (x86)/Windows Kits/10/" --allow_managed  -arch compute_30 -m64 -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused -nvvmir-library "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../nvvm/libdevice/libdevice.10.bc" --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --orig_src_file_name "CMakeCUDACompilerId.cu" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+  considering line: [ptxas -arch=sm_30 -m64 "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_30.cubin" ]
+  considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=30,file=tmp/CMakeCUDACompilerId.sm_30.cubin" "--image3=kind=ptx,sm=30,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+  considering line: [cl.exe @"tmp/CMakeCUDACompilerId.cpp4.ii.res" > "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [CMakeCUDACompilerId.cu]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h: warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\sm_20_intrinsics.h(925): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [c:\program files\nvidia gpu computing toolkit\cuda\v10.2\include\cuda_runtime_api.h(9348): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失]
+  considering line: [cudafe++ --microsoft_version=1916 --msvc_target_version=1916 --compiler_bindir "C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x64/../../../../../../.." --sdk_dir "C:/Program Files (x86)/Windows Kits/10/" --allow_managed --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [cl.exe @"tmp/CMakeCUDACompilerId.obj.res" -Fo"tmp/CMakeCUDACompilerId.obj" ]
+  considering line: [CMakeCUDACompilerId.cudafe1.cpp]
+  considering line: [nvlink --arch=sm_30 --register-link-binaries="tmp/a_dlink.reg.c"  -m64   "/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.obj"  -o "tmp/a_dlink.sm_30.cubin"]
+    ignoring nvlink line
+  considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=30,file=tmp/a_dlink.sm_30.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+  considering line: [cl.exe @"tmp/a_dlink.obj.res" -Fo"tmp/a_dlink.obj" ]
+  considering line: [link.stub]
+  considering line: [cl.exe @"tmp/a.exe.res" -Fe"a.exe" ]
+    extracted link line: [cl.exe -nologo "tmp/a_dlink.obj" "tmp/CMakeCUDACompilerId.obj" -link -INCREMENTAL:NO   "/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64"  cudadevrt.lib  cudart_static.lib -Fe"a.exe" ]
+  considering line: [  ]
+  considering line: []
+  found 'INCLUDES=' string: ["-IC:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../include"  ]
+
+  link line regex: [^( *|.*[/\])(ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line: [cuda-fake-ld cl.exe -nologo "tmp/a_dlink.obj" "tmp/CMakeCUDACompilerId.obj" -link -INCREMENTAL:NO   "/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64"  cudadevrt.lib  cudart_static.lib -Fe"a.exe" ]
+    arg [cuda-fake-ld] ==> ignore
+    arg [cl.exe] ==> recognize MSVC cl
+    arg [-nologo] ==> ignore
+    arg [tmp/a_dlink.obj] ==> ignore
+    arg [tmp/CMakeCUDACompilerId.obj] ==> ignore
+    arg [-link] ==> ignore MSVC cl option
+    arg [-INCREMENTAL:NO] ==> ignore
+    arg [/LIBPATH:C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64] ==> dir [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64]
+    arg [cudadevrt.lib] ==> lib [cudadevrt.lib]
+    arg [cudart_static.lib] ==> lib [cudart_static.lib]
+    arg [-Fea.exe] ==> ignore
+  collapse library dir [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/bin/../lib/x64] ==> [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64]
+  implicit libs: [cudadevrt.lib;cudart_static.lib]
+  implicit dirs: [C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.2/lib/x64]
+  implicit fwks: []
+
+

@@ -1,11 +1,11 @@
 #pragma once
-#include "base.h"
 #include "ExpBase.h"
 #include "OpRegister.h"
 #include "Tensor.h"
+#include "base.h"
 #include "matmul_enigen.h"
+#include "init_op.h"
 #include "tensor_imp_cpu.h"
-#include "rand.h"
 
 using Packet::PacketHandle;
 
@@ -25,7 +25,7 @@ struct ImpExp<Scalar<T>> {
 
   ImpExp(const Scalar<T>& data) : _data(data.data) {}
 
-  FORCE_INLINE bool alignment_check() { return true; }
+  FORCE_INLINE bool alignment_check() const { return true; }
 
   template <typename DataType, typename Container,
             ENABLE_IF(std::is_arithmetic_v<DataType>)>
@@ -44,24 +44,25 @@ struct ImpExp<Scalar<T>> {
 
 template <typename T, int Dim, typename type::device Device>
 struct ImpExp<Tensor<T, Dim, Device>> {
-  const Tensor<T, 2, Device>& _data;
+  Tensor<T, Dim, Device> _data;
 
   ImpExp(const Tensor<T, Dim, Device>& data) : _data(data) {}
 
-  FORCE_INLINE bool alignment_check() {
-    return Packet::PacketHandle<T>::alignment_check(_data.m_storage);
+  FORCE_INLINE bool alignment_check() const {
+    return Packet::PacketHandle<T>::alignment_check(_data.m_storage) ? false
+                                                                     : true;
   }
 
   template <typename DataType, typename Container = void,
             ENABLE_IF(std::is_arithmetic_v<DataType>)>
-  ELASTIC_CALL FORCE_INLINE DataType& Eval(index x, index y,
+  ELASTIC_CALL FORCE_INLINE DataType& Eval(const index x, const index y,
                                            Container* dst = nullptr) {
     return const_cast<Tensor<T, Dim, Device>*>(&_data)->coeffRef(x, y);
   }
 
   template <typename DataType, typename Container = void,
             ENABLE_IF(!std::is_arithmetic_v<DataType>)>
-  ELASTIC_CALL FORCE_INLINE DataType Eval(index x, index y,
+  ELASTIC_CALL FORCE_INLINE DataType Eval(const index x, const index y,
                                           Container* dst = nullptr) {
     return Packet::PacketHandle<T>::load(
         &const_cast<Tensor<T, Dim, Device>*>(&_data)->coeffRef(x, y));
@@ -70,11 +71,11 @@ struct ImpExp<Tensor<T, Dim, Device>> {
 
 template <int Method, typename Dtype, typename type::device Device>
 struct ImpExp<InitExp<Method, Dtype, Device>> {
-  const InitExp<Method, Dtype, Device>& _exp;
+  InitExp<Method, Dtype, Device> _exp;
 
   ImpExp(const InitExp<Method, Dtype, Device>& exp) : _exp(exp) {}
 
-  FORCE_INLINE bool alignment_check() { return true; }
+  FORCE_INLINE bool alignment_check() const { return true; }
 
   template <typename T, typename Container = void>
   ELASTIC_CALL FORCE_INLINE T Eval(index x, index y,
@@ -92,7 +93,7 @@ struct ImpExp<BinaryExp<Op, Lhs, Rhs, Dtype, exp_type>> {
   ImpExp(const BinaryExp<Op, Lhs, Rhs, Dtype, exp_type>& exp)
       : _lhs(exp._lhs), _rhs(exp._rhs) {}
 
-  FORCE_INLINE bool alignment_check() {
+  FORCE_INLINE bool alignment_check() const {
     return _lhs.alignment_check() && _rhs.alignment_check();
   }
 
@@ -114,7 +115,7 @@ struct ImpExp<UnaryExp<Op, SelfType, Dtype, exp_type>> {
   ImpExp(const UnaryExp<Op, SelfType, Dtype, exp_type>& exp)
       : _self(exp._self) {}
 
-  FORCE_INLINE bool alignment_check() { return _self.alignment_check(); }
+  FORCE_INLINE bool alignment_check() const { return _self.alignment_check(); }
 
   template <typename DataType, typename Container = void>
   ELASTIC_CALL FORCE_INLINE DataType Eval(index x, index y,

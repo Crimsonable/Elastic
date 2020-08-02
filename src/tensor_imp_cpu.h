@@ -33,10 +33,9 @@ FORCE_INLINE void ExpEngineExcutor(
   auto dst = ImpExp<Tensor<T, Dim, type::device::cpu>>(_dst->derived_to());
   using Container = Tensor<T, Dim, type::device::cpu>;
 
-  auto shape = _dst->shape;
   index ld = _dst->ld;
-  index last = shape.last();
-  index size = shape.size();
+  index last = _dst->shape.last();
+  index size = ld * last;
 
   bool can_vec = dst.alignment_check();
   index packed_size = Packet::PacketHandle<T>::size();
@@ -46,7 +45,7 @@ FORCE_INLINE void ExpEngineExcutor(
   {
 #pragma omp for nowait
     for (index idx = 0; idx < end_vec; idx += packed_size) {
-      PacketSaver<T, Op>::template save<typename PacketHandle<T>::type>(
+      PacketSaver<T, Op>::template save<PacketHandle<T>::type>(
           dst.template Eval<T>(idx % ld, idx / ld),
           exp.template Eval<typename PacketHandle<T>::type, Container>(
               idx % ld, idx / ld, _dst));

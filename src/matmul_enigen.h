@@ -19,41 +19,51 @@ template <typename T, typename type::device Device>
 struct BlasEnigen;
 
 #ifdef ELASTIC_USE_CUDA
-  template <typename T>
-  struct BlasEnigen<T, type::device::gpu> {
-    constexpr static type::device device = type::device::gpu;
+template <typename T>
+struct BlasEnigen<T, type::device::gpu> {
+  constexpr static type::device device = type::device::gpu;
 
-    inline static void setStream(Stream<device>* stream) {
-      CHECK_CON(cublasSetStream(Stream<device>::getBlasHandle(stream),
-                                Stream<device>::getStream(stream)),
-                "Fail to set stream for cublas")
-    }
+  inline static void setStream(Stream<device>* stream) {
+    CHECK_CON(cublasSetStream(Stream<device>::getBlasHandle(stream),
+                              Stream<device>::getStream(stream)),
+              "Fail to set stream for cublas")
+  }
 
-    inline static void gemm(Stream<device>* stream, bool l_trans, T* A,
-                            const int& lda, bool r_trans, T* B, const int& ldb,
-                            T* C, const int& ldc, int m, int n, int k) {
-      T alpha = 1.0, beta = 0.0;
-      if constexpr (std::is_same_v<T, float>)
-        cublasSgemm(Stream<device>::getBlasHandle(stream), l_trans, r_trans, m,
-                    n, k, &alpha, A, lda, B, ldb, &beta, C, ldc);
-      else if constexpr (std::is_same_v<T, double>)
-        cublasDgemm(Stream<device>::getBlasHandle(stream), l_trans, r_trans, m,
-                    n, k, &alpha, A, lda, B, ldb, &beta, C, ldc);
-    }
-  };
+  inline static void gemm(Stream<device>* stream, bool l_trans, float* A,
+                          const int& lda, bool r_trans, float* B,
+                          const int& ldb, float* C, const int& ldc, int m,
+                          int n, int k) {
+    float alpha = 1.0, beta = 0.0;
+    cublasSgemm(Stream<device>::getBlasHandle(stream),
+                l_trans ? CUBLAS_OP_T : CUBLAS_OP_N,
+                r_trans ? CUBLAS_OP_T : CUBLAS_OP_N, m, n, k, &alpha, A, lda, B,
+                ldb, &beta, C, ldc);
+  }
+
+  inline static void gemm(Stream<device>* stream, cublasOperation_t l_trans,
+                          double* A, const int& lda, cublasOperation_t r_trans,
+                          double* B, const int& ldb, double* C, const int& ldc,
+                          int m, int n, int k) {
+    double alpha = 1.0, beta = 0.0;
+    cublasDgemm(Stream<device>::getBlasHandle(stream),
+                l_trans ? CUBLAS_OP_T : CUBLAS_OP_N,
+                r_trans ? CUBLAS_OP_T : CUBLAS_OP_N, m, n, k, &alpha, A, lda, B,
+                ldb, &beta, C, ldc);
+  }
+};
 #endif
-  template <typename T>
-  struct BlasEnigen<T, type::device::cpu> {
-    constexpr static type::device device = type::device::cpu;
+template <typename T>
+struct BlasEnigen<T, type::device::cpu> {
+  constexpr static type::device device = type::device::cpu;
 
-    inline static void setStream(Stream<device>* stream) {}
+  inline static void setStream(Stream<device>* stream) {}
 
-    inline static void gemm(Stream<device>* stream, bool l_trans, T* A,
-                            const int& lda, bool r_trans, T* B, const int& ldb,
-                            T* C, const int& ldc, int m, int n, int k) {
-      CSM::Gemm(A, lda, B, ldb, C, ldc, m, n, k);
-    }
-  };
+  inline static void gemm(Stream<device>* stream, bool l_trans, T* A,
+                          const int& lda, bool r_trans, T* B, const int& ldb,
+                          T* C, const int& ldc, int m, int n, int k) {
+    CSM::Gemm(A, lda, B, ldb, C, ldc, m, n, k);
+  }
+};
 
 template <typename Lhs, typename Rhs, typename Dtype>
 class ImpExp<MatMul<Lhs, Rhs, Dtype>> {
@@ -68,13 +78,25 @@ class ImpExp<MatMul<Lhs, Rhs, Dtype>> {
 
   inline void assign_memory(
       Tensor<Dtype, ExpTraits<Lhs>::dim, ExpTraits<Lhs>::dev>* dst) {
-    if constexpr (ExpTraits<Lhs>::exp) {
+    /*if constexpr (ExpTraits<Lhs>::exp) {
       l_buffer = new Tensor<Dtype, ExpTraits<Lhs>::dim, ExpTraits<Lhs>::dev>(
           _exp._lhs.shape);
       AllocSpace(l_buffer);
     }
 
     if constexpr (ExpTraits<Rhs>::exp) {
+      r_buffer = new Tensor<Dtype, ExpTraits<Rhs>::dim, ExpTraits<Rhs>::dev>(
+          _exp._rhs.shape);
+      AllocSpace(r_buffer);
+    }*/
+
+    if (ExpTraits<Lhs>::exp) {
+      l_buffer = new Tensor<Dtype, ExpTraits<Lhs>::dim, ExpTraits<Lhs>::dev>(
+          _exp._lhs.shape);
+      AllocSpace(l_buffer);
+    }
+
+    if (ExpTraits<Rhs>::exp) {
       r_buffer = new Tensor<Dtype, ExpTraits<Rhs>::dim, ExpTraits<Rhs>::dev>(
           _exp._rhs.shape);
       AllocSpace(r_buffer);

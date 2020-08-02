@@ -72,7 +72,7 @@ class Tensor : public ContainerWarpper<Tensor<T, Dim, Device>, T> {
   }
 
   void printMatrix() {
-    for (index i = 0; i < ld; ++i) {
+    for (index i = 0; i < shape.dimx(); ++i) {
       for (index j = 0; j < shape.last(); ++j)
         std::cout << m_storage[j * ld + i] << " ";
       std::cout << std::endl;

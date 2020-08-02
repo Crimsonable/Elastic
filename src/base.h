@@ -15,7 +15,7 @@
 
 namespace Elastic {
 namespace type {
-enum device { None,cpu, gpu };
+enum device { None, cpu, gpu };
 const int container = 0;
 const int keepDim = 1;
 const int complex = 3;
@@ -25,7 +25,7 @@ using index = std::size_t;
 
 //#define DEBUG_INFO
 //#define _DEBUG
-//#define ELASTIC_USE_CUDA 1
+#define ELASTIC_USE_CUDA 1
 
 #define VECTORIZATION_ALIGN_BYTES 32
 #define VEC_CALL
@@ -48,7 +48,7 @@ using index = std::size_t;
 #endif
 
 #define CHECK_CON(condition, message)  \
-  if (!(condition)) {                    \
+  if (!(condition)) {                  \
     std::cout << message << std::endl; \
     abort();                           \
   }
